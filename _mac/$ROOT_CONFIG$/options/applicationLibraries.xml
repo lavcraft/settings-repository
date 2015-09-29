@@ -1,0 +1,28 @@
+<application>
+  <component name="libraryTable">
+    <library name="html5shiv" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$USER_HOME$/Library/Caches/IntelliJIdea14/extLibs/http_oss.maxcdn.com_html5shiv_3.7.2_html5shiv.js" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$USER_HOME$/Library/Caches/IntelliJIdea14/extLibs/http_oss.maxcdn.com_html5shiv_3.7.2_html5shiv.js" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="respond" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$USER_HOME$/Library/Caches/IntelliJIdea14/extLibs/http_oss.maxcdn.com_respond_1.4.2_respond.min.js" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$USER_HOME$/Library/Caches/IntelliJIdea14/extLibs/http_oss.maxcdn.com_respond_1.4.2_respond.min.js" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
+</application>

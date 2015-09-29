@@ -1,0 +1,6 @@
+<application>
+  <component name="JavaRebelPlugin">
+    <option name="embedded" value="false" />
+    <option name="griffin" value="true" />
+  </component>
+</application>
