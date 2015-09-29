@@ -9,6 +9,7 @@
       <mapping pattern="var" type="PLAIN_TEXT" />
       <mapping pattern="TESTME" type="PLAIN_TEXT" />
       <mapping pattern="AccME" type="PLAIN_TEXT" />
+      <mapping pattern=".retain" type="PLAIN_TEXT" />
       <mapping pattern="batch0" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="bson" type="PLAIN_TEXT" />
