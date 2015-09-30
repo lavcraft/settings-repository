@@ -1,0 +1,6 @@
+<application>
+  <component name="UISettings">
+    <option name="WIDESCREEN_SUPPORT" value="true" />
+    <option name="MOVE_MOUSE_ON_DEFAULT_BUTTON" value="true" />
+  </component>
+</application>
