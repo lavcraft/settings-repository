@@ -1,13 +1,10 @@
 <application>
   <component name="CodeInsightSettings">
+    <option name="HIGHLIGHT_SCOPE" value="true" />
     <option name="OPTIMIZE_IMPORTS_ON_THE_FLY" value="true" />
     <option name="ADD_UNAMBIGIOUS_IMPORTS_ON_THE_FLY" value="true" />
   </component>
   <component name="DaemonCodeAnalyzerSettings">
     <option name="SHOW_METHOD_SEPARATORS" value="true" />
-  </component>
-  <component name="JavaCodeFoldingSettings">
-    <option name="collapseEndOfLineComments" value="true" />
-    <option name="COLLAPSE_END_OF_LINE_COMMENTS" value="true" />
   </component>
 </application>

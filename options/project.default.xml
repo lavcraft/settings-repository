@@ -2,7 +2,6 @@
   <component name="ProjectManager">
     <defaultProject>
       <component name="CompilerConfiguration">
-        <option name="DEFAULT_COMPILER" />
         <resourceExtensions />
         <wildcardResourcePatterns>
           <entry name="!?*.java" />
@@ -27,34 +26,14 @@
       <component name="GradleLocalSettings">
         <option name="modificationStamps">
           <map>
-            <entry key="$USER_HOME$/git/advanced-interceptors" value="4319716887000" />
-            <entry key="$USER_HOME$/git/interview-questions" value="2857041955000" />
-            <entry key="$USER_HOME$/git/joker/micro-examples" value="1442152935000" />
-            <entry key="$USER_HOME$/git/microservices/sense-smssender" value="2884967756000" />
-            <entry key="$USER_HOME$/git/sense-batch" value="12881627547000" />
-            <entry key="$USER_HOME$/git/sense-external-user-web" value="4293935623000" />
-            <entry key="$USER_HOME$/git/sense-money-request-web" value="4304945850000" />
-            <entry key="$USER_HOME$/git/sense-money-send-web" value="4311405215000" />
-            <entry key="$USER_HOME$/git/sense-payments" value="4320264661000" />
-            <entry key="$USER_HOME$/git/sense-providers" value="4309711157000" />
-            <entry key="$USER_HOME$/git/sense-rest" value="22923032996000" />
-            <entry key="$USER_HOME$/git/sense-support" value="10053505201000" />
-            <entry key="$USER_HOME$/git/sense-ws" value="40081790470000" />
-            <entry key="$USER_HOME$/git/spock-mastering" value="4326622692000" />
-            <entry key="$USER_HOME$/git/spring-boot-security-template" value="1442294462000" />
-            <entry key="$USER_HOME$/git/testing-with-wiremock" value="4318945068000" />
-            <entry key="$USER_HOME$/git/thrift-spring-boot-starter" value="7152975039000" />
+            <entry key="$USER_HOME$/git/sense-rest" value="23084058048000" />
+            <entry key="$USER_HOME$/git/sense-support" value="10100328168000" />
+            <entry key="$USER_HOME$/git/sense/rest" value="18758963187000" />
+            <entry key="$USER_HOME$/git/sense/ws" value="46179227776000" />
           </map>
         </option>
         <option name="externalProjectsViewState">
           <projects_view />
-        </option>
-      </component>
-      <component name="MavenImportPreferences">
-        <option name="generalSettings">
-          <MavenGeneralSettings>
-            <option name="mavenHome" value="Bundled (Maven 3)" />
-          </MavenGeneralSettings>
         </option>
       </component>
       <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -65,132 +44,20 @@
                 <id />
               </State>
               <State>
-                <id>AOP</id>
-              </State>
-              <State>
-                <id>Abstraction issuesJava</id>
-              </State>
-              <State>
-                <id>Annotations verifyingGroovy</id>
-              </State>
-              <State>
-                <id>Class structureJava</id>
-              </State>
-              <State>
-                <id>Code maturity issuesJava</id>
-              </State>
-              <State>
-                <id>Code style issuesJava</id>
-              </State>
-              <State>
-                <id>CodeSpring CoreSpring</id>
-              </State>
-              <State>
-                <id>Concurrency annotation issuesJava</id>
-              </State>
-              <State>
-                <id>Data flow issuesJava</id>
-              </State>
-              <State>
-                <id>Declaration redundancyJava</id>
-              </State>
-              <State>
-                <id>Encapsulation issuesJava</id>
-              </State>
-              <State>
                 <id>General</id>
               </State>
               <State>
-                <id>GeneralJava</id>
+                <id>XPath</id>
               </State>
               <State>
-                <id>GeneralJavaScript</id>
-              </State>
-              <State>
-                <id>Groovy</id>
-              </State>
-              <State>
-                <id>Inheritance issuesJava</id>
-              </State>
-              <State>
-                <id>Initialization issuesJava</id>
-              </State>
-              <State>
-                <id>Internationalization issuesJava</id>
-              </State>
-              <State>
-                <id>JPA issues</id>
-              </State>
-              <State>
-                <id>JUnit issuesJava</id>
-              </State>
-              <State>
-                <id>Java</id>
-              </State>
-              <State>
-                <id>Java language level issuesJava</id>
-              </State>
-              <State>
-                <id>Java language level migration aidsJava</id>
-              </State>
-              <State>
-                <id>JavaFX</id>
-              </State>
-              <State>
-                <id>JavaScript</id>
-              </State>
-              <State>
-                <id>Javadoc issuesJava</id>
-              </State>
-              <State>
-                <id>Language Injection</id>
-              </State>
-              <State>
-                <id>Logging issuesJava</id>
-              </State>
-              <State>
-                <id>Naming ConventionsGroovy</id>
-              </State>
-              <State>
-                <id>Naming conventionsJava</id>
-              </State>
-              <State>
-                <id>Pattern Validation</id>
-              </State>
-              <State>
-                <id>Potentially confusing code constructsGroovy</id>
-              </State>
-              <State>
-                <id>Probable bugs</id>
-              </State>
-              <State>
-                <id>Probable bugsJava</id>
-              </State>
-              <State>
-                <id>Properties FilesJava</id>
-              </State>
-              <State>
-                <id>Serialization issuesJava</id>
-              </State>
-              <State>
-                <id>Spring</id>
-              </State>
-              <State>
-                <id>Spring AOPSpring</id>
-              </State>
-              <State>
-                <id>Spring CoreSpring</id>
-              </State>
-              <State>
-                <id>Spring Web ServicesSpring</id>
-              </State>
-              <State>
-                <id>TestNG</id>
-              </State>
-              <State>
-                <id>XMLSpring CoreSpring</id>
+                <id>XSLT</id>
               </State>
             </expanded-state>
+            <selected-state>
+              <State>
+                <id>Ant inspections</id>
+              </State>
+            </selected-state>
           </profile-state>
         </entry>
       </component>
@@ -204,10 +71,9 @@
         <ConfirmationsSetting value="0" id="Add" />
         <ConfirmationsSetting value="0" id="Remove" />
       </component>
-      <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" />
+      <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="true" assert-keyword="true" jdk-15="true" />
       <component name="PropertiesComponent">
-        <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
-        <property name="settings.editor.splitter.proportion" value="0.2" />
+        <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
       </component>
       <component name="RunManager">
         <configuration default="true" type="Applet" factoryName="Applet">
@@ -274,7 +140,7 @@
           <option name="TEST_OBJECT" value="CLASS" />
           <option name="VM_PARAMETERS" value="-ea" />
           <option name="PARAMETERS" />
-          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
           <option name="OUTPUT_DIRECTORY" />
           <option name="ANNOTATION_TYPE" />
           <option name="ENV_VARIABLES" />
