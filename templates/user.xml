@@ -129,7 +129,14 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="reqMappParrot" value="    @org.springframework.web.bind.annotation.RequestMapping('/rent')&#10;    public org.springframework.http.ResponseEntity&lt;ru.joker.hippo.HippoRentResponse&gt; rentHippo(@org.springframework.web.bind.annotation.RequestParam java.util.Optional&lt;java.lang.Integer&gt; count) {&#10;        ResponseEntity.status(404).body(HippoRentResponse.builder()&#10;                .hippos(hipposCount.addAndGet(-11 -1 * count.orElse(1) count.orElse(1)))&#10;                .fee(0)&#10;                .build())&#10;&#10;    }" toReformat="true" toShortenFQNames="true">
+  <template name="reqMapping" value="@org.springframework.web.bind.annotation.RequestMapping(value=&quot;/rent&quot;, method = $METHOD$)&#10;    public org.springframework.http.ResponseEntity&lt;$RESPONSE_TYPE$&gt; $NAME$($REQUEST_TYPE$ $REQUEST_NAME$) {&#10;        return org.springframework.http.ResponseEntity.status($RESPONSE_STATUS$).body($RESPONSE_BODY$);&#10;    }" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="METHOD" expression="" defaultValue="HttpsMethod.GET" alwaysStopAt="true" />
+    <variable name="RESPONSE_TYPE" expression="" defaultValue="String" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="methodName" alwaysStopAt="true" />
+    <variable name="REQUEST_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REQUEST_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESPONSE_STATUS" expression="" defaultValue="200" alwaysStopAt="true" />
+    <variable name="RESPONSE_BODY" expression="" defaultValue="&quot;Hello World&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -137,13 +144,13 @@
       <option name="XML" value="false" />
       <option name="XML_TEXT" value="false" />
       <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
@@ -158,11 +165,21 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
+      <option name="SCALA" value="false" />
+      <option name="SCALA_XML" value="false" />
+      <option name="SCALA_COMMENT" value="false" />
+      <option name="SCALA_STRING" value="false" />
+      <option name="SCALA_CODE" value="false" />
+      <option name="SBT" value="false" />
+      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
