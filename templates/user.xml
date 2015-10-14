@@ -725,7 +725,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="thriftController" value="    @ru.trylogic.spring.boot.thrift.annotation.ThriftHandler(&quot;/api&quot;)&#10;    public static class ThriftContoller implements info.developerblog.services.user.TFbiService.Iface {&#10;&#10;        @java.lang.Override&#10;        info.developerblog.services.user.TFbiResponse fink(info.developerblog.services.auth.TUser user, int hippoCount, int fee) throws org.apache.thrift.TException {&#10;            return new info.developerblog.services.user.TFbiResponse().setLastFink('ISO8601 (' + ZonedDateTime.now() + ')')&#10;        }&#10;    }" toReformat="true" toShortenFQNames="true">
+  <template name="thriftController" value="    @ru.trylogic.spring.boot.thrift.annotation.ThriftHandler(&quot;/api&quot;)&#10;    public static class ThriftController implements info.developerblog.services.user.TFbiService.Iface {&#10;&#10;        @java.lang.Override&#10;        info.developerblog.services.user.TFbiResponse fink(info.developerblog.services.auth.TUser user, int hippoCount, int fee) throws org.apache.thrift.TException {&#10;            log.info 'fink: {}, {}, {}', user, hippoCount, fee&#10;            return new info.developerblog.services.user.TFbiResponse().setLastFink('ISO8601 (' + ZonedDateTime.now() + ')')&#10;        }&#10;    }" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -790,6 +790,114 @@
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="thriftThrows" value="throws (&#10;        99: auth.TUnauthorizedException ue&#10;    )" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="SCALA" value="false" />
+      <option name="SCALA_XML" value="false" />
+      <option name="SCALA_COMMENT" value="false" />
+      <option name="SCALA_STRING" value="false" />
+      <option name="SCALA_CODE" value="false" />
+      <option name="SBT" value="false" />
+      <option name="SSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="KOTLIN_TOPLEVEL" value="false" />
+      <option name="KOTLIN_STATEMENT" value="false" />
+      <option name="KOTLIN_CLASS" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="false" />
+      <option name="KOTLIN_COMMENT" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="thriftFbiClient" value="    @info.developerblog.spring.thrift.annotation.ThriftClient(serviceId = '$SERV_ID$', path = '$PATH_ID$')&#10;    info.developerblog.services.user.TFbiService.Client client" toReformat="true" toShortenFQNames="true">
+    <variable name="SERV_ID" expression="" defaultValue="&quot;fbi-service&quot;" alwaysStopAt="true" />
+    <variable name="PATH_ID" expression="" defaultValue="&quot;/api&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="MAVEN" value="false" />
+      <option name="SCALA" value="false" />
+      <option name="SCALA_XML" value="false" />
+      <option name="SCALA_COMMENT" value="false" />
+      <option name="SCALA_STRING" value="false" />
+      <option name="SCALA_CODE" value="false" />
+      <option name="SBT" value="false" />
+      <option name="SSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="KOTLIN_TOPLEVEL" value="false" />
+      <option name="KOTLIN_STATEMENT" value="false" />
+      <option name="KOTLIN_CLASS" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="false" />
+      <option name="KOTLIN_COMMENT" value="false" />
+      <option name="OTHER" value="false" />
     </context>
   </template>
 </templateSet>
