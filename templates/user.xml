@@ -566,59 +566,6 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="fbiClient" value="@org.springframework.cloud.netflix.feign.FeignClient(&quot;fbi-service&quot;)&#10;public interface FbiClient {&#10;    @org.springframework.web.bind.annotation.RequestMapping(value = &quot;/fink&quot;, method = org.springframework.web.bind.annotation.RequestMethod.POST, consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)&#10;    ru.joker.FbiClient.FinkResponse fink(ru.joker.FbiClient.Fink request);&#10;&#10;    @lombok.Data&#10;    @lombok.Builder&#10;    class Fink {&#10;        int hippoCount;&#10;        int parrotFee;&#10;    }&#10;&#10;    @lombok.Data&#10;    @lombok.Builder&#10;    @lombok.NoArgsConstructor&#10;    @lombok.AllArgsConstructor&#10;    class FinkResponse {&#10;        java.time.ZonedDateTime lastFink;&#10;    }&#10;}&#10;" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="true" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="true" />
-      <option name="JAVA_STRING" value="true" />
-      <option name="COMPLETION" value="true" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="GROOVY" value="true" />
-      <option name="GROOVY_EXPRESSION" value="true" />
-      <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
   <template name="parrotController" value="    @org.springframework.web.bind.annotation.RestController&#10;    public static class ParrotController {&#10;        @org.springframework.web.bind.annotation.RequestMapping('fee')&#10;        def fee() {&#10;            int randomFee = ThreadLocalRandom.current() nextInt 100&#10;            return [fee: randomFee]&#10;        }&#10;    }" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -708,6 +655,59 @@
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
+      <option name="MAVEN" value="false" />
+      <option name="SCALA" value="false" />
+      <option name="SCALA_XML" value="false" />
+      <option name="SCALA_COMMENT" value="false" />
+      <option name="SCALA_STRING" value="false" />
+      <option name="SCALA_CODE" value="false" />
+      <option name="SBT" value="false" />
+      <option name="SSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="KOTLIN_TOPLEVEL" value="false" />
+      <option name="KOTLIN_STATEMENT" value="false" />
+      <option name="KOTLIN_CLASS" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="false" />
+      <option name="KOTLIN_COMMENT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="fbiClient" value="@org.springframework.cloud.netflix.feign.FeignClient(&quot;fbi-service&quot;)&#10;public interface FbiClient {&#10;    @org.springframework.web.bind.annotation.RequestMapping(value = &quot;/fink&quot;, method = org.springframework.web.bind.annotation.RequestMethod.POST,&#10;            consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)&#10;    FinkResponse fink(Fink request);&#10;&#10;    @lombok.Data&#10;    @lombok.Builder&#10;    @lombok.NoArgsConstructor&#10;    @lombok.AllArgsConstructor&#10;    class Fink {&#10;        int hippoCount;&#10;        int parrotFee;&#10;    }&#10;&#10;    @lombok.Data&#10;    @lombok.Builder&#10;    @lombok.NoArgsConstructor&#10;    @lombok.AllArgsConstructor&#10;    class FinkResponse {&#10;        java.time.ZonedDateTime lastFink;&#10;    }&#10;}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="SCALA" value="false" />
       <option name="SCALA_XML" value="false" />
