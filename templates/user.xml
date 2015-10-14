@@ -168,10 +168,10 @@
       <option name="PHP" value="false" />
       <option name="PHP Comment" value="false" />
       <option name="PHP String Literal" value="false" />
-      <option name="GROOVY" value="true" />
-      <option name="GROOVY_EXPRESSION" value="true" />
-      <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="SCALA" value="false" />
       <option name="SCALA_XML" value="false" />
@@ -776,6 +776,20 @@
       <option name="KOTLIN_EXPRESSION" value="false" />
       <option name="KOTLIN_COMMENT" value="false" />
       <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="reqMappingGroovy" value="@org.springframework.web.bind.annotation.RequestMapping(value='/$NAME$', method = $METHOD$)&#10;def $NAME$($REQUEST_TYPE$ $REQUEST_NAME$) {&#10;    return [$key$:$val$]&#10;}" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;methodName&quot;" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="&quot;org.springframework.web.bind.annotation.RequestMethod.GET&quot;" alwaysStopAt="true" />
+    <variable name="REQUEST_TYPE" expression="" defaultValue="&quot;Optional&lt;String&gt;&quot;" alwaysStopAt="true" />
+    <variable name="REQUEST_NAME" expression="" defaultValue="&quot;request&quot;" alwaysStopAt="true" />
+    <variable name="key" expression="" defaultValue="&quot;status&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;\&quot;success\&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="true" />
     </context>
   </template>
 </templateSet>
