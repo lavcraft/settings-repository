@@ -165,21 +165,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -219,21 +209,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -277,21 +257,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -330,21 +300,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -383,21 +343,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -436,21 +386,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -489,21 +429,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="true" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -542,21 +472,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -595,21 +515,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -648,21 +558,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -701,21 +601,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -754,21 +644,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="true" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -821,21 +701,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
@@ -876,21 +746,11 @@
       <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
