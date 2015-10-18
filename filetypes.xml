@@ -1,7 +1,7 @@
 <application>
   <component name="FileTypeManager" version="15">
     <extensionMap>
-      <mapping pattern="nginx" type="PLAIN_TEXT" />
+      <mapping pattern="batch0" type="PLAIN_TEXT" />
       <mapping pattern="auto_docs" type="PLAIN_TEXT" />
       <mapping pattern="nginx-log" type="PLAIN_TEXT" />
       <mapping pattern="alse0" type="PLAIN_TEXT" />
@@ -12,7 +12,7 @@
       <mapping pattern="TESTME" type="PLAIN_TEXT" />
       <mapping pattern="AccME" type="PLAIN_TEXT" />
       <mapping pattern=".retain" type="PLAIN_TEXT" />
-      <mapping pattern="batch0" type="PLAIN_TEXT" />
+      <mapping pattern="nginx" type="PLAIN_TEXT" />
       <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="j2" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
