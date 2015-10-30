@@ -959,7 +959,6 @@
       <option name="ColdFusion" value="false" />
       <option name="GAUGE" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="JS_EXPRESSION" value="false" />
       <option name="JSX_HTML" value="false" />
@@ -970,15 +969,12 @@
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
       <option name="KOTLIN_STATEMENT" value="false" />
       <option name="KOTLIN_CLASS" value="false" />
       <option name="KOTLIN_EXPRESSION" value="false" />
       <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
