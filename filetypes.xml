@@ -6,6 +6,7 @@
       <mapping pattern="nginx-log" type="PLAIN_TEXT" />
       <mapping pattern="alse0" type="PLAIN_TEXT" />
       <mapping pattern="alse1" type="PLAIN_TEXT" />
+      <mapping pattern="inventory" type="PLAIN_TEXT" />
       <mapping pattern="VERSION" type="PLAIN_TEXT" />
       <mapping pattern="cards" type="PLAIN_TEXT" />
       <mapping pattern="var" type="PLAIN_TEXT" />
