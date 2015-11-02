@@ -10,11 +10,13 @@
       <mapping pattern="VERSION" type="PLAIN_TEXT" />
       <mapping pattern="cards" type="PLAIN_TEXT" />
       <mapping pattern="var" type="PLAIN_TEXT" />
+      <mapping pattern="nginx-logrotate" type="PLAIN_TEXT" />
       <mapping pattern="TESTME" type="PLAIN_TEXT" />
       <mapping pattern="AccME" type="PLAIN_TEXT" />
       <mapping pattern=".retain" type="PLAIN_TEXT" />
       <mapping pattern="batch0" type="PLAIN_TEXT" />
       <mapping ext="service" type="PLAIN_TEXT" />
+      <mapping ext="conf" type="PLAIN_TEXT" />
       <mapping ext="j2" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="bson" type="PLAIN_TEXT" />
