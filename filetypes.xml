@@ -6,6 +6,7 @@
       <mapping pattern="alse1" type="PLAIN_TEXT" />
       <mapping pattern="alse0" type="PLAIN_TEXT" />
       <mapping pattern="nginx" type="PLAIN_TEXT" />
+      <mapping pattern="all" type="PLAIN_TEXT" />
       <mapping pattern="AccME" type="PLAIN_TEXT" />
       <mapping pattern="cards" type="PLAIN_TEXT" />
       <mapping pattern="batch0" type="PLAIN_TEXT" />
