@@ -1,13 +1,13 @@
 <application>
   <component name="FileTypeManager" version="16">
     <extensionMap>
-      <mapping pattern="nginx" type="PLAIN_TEXT" />
+      <mapping pattern="vagrant" type="PLAIN_TEXT" />
       <mapping pattern="auto_docs" type="PLAIN_TEXT" />
       <mapping pattern="nginx-log" type="PLAIN_TEXT" />
-      <mapping pattern="nginx-logrotate" type="PLAIN_TEXT" />
-      <mapping pattern="vagrant" type="PLAIN_TEXT" />
       <mapping pattern="inventory" type="PLAIN_TEXT" />
+      <mapping pattern="nginx-logrotate" type="PLAIN_TEXT" />
       <mapping pattern="TESTME" type="PLAIN_TEXT" />
+      <mapping pattern="nginx" type="PLAIN_TEXT" />
       <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="formatlog" type="PLAIN_TEXT" />
       <mapping ext="j2" type="PLAIN_TEXT" />
