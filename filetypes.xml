@@ -1,0 +1,7 @@
+<application>
+  <component name="FileTypeManager" version="16">
+    <extensionMap>
+      <mapping pattern="MultipleObservableNotificationSpec" type="Groovy" />
+    </extensionMap>
+  </component>
+</application>
