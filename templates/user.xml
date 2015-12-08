@@ -33,8 +33,6 @@
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="ACTION_SCRIPT" value="false" />
-      <option name="MXML" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
@@ -80,8 +78,6 @@
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="ACTION_SCRIPT" value="false" />
-      <option name="MXML" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
@@ -127,8 +123,6 @@
       <option name="GROOVY_DECLARATION" value="true" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
-      <option name="ACTION_SCRIPT" value="false" />
-      <option name="MXML" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="KOTLIN_TOPLEVEL" value="false" />
