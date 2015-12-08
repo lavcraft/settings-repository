@@ -1,5 +1,8 @@
 <application>
   <component name="UISettings">
+    <option name="WIDESCREEN_SUPPORT" value="true" />
+    <option name="RIGHT_HORIZONTAL_SPLIT" value="true" />
     <option name="COLOR_BLINDNESS" value="deuteranopia" />
+    <option name="MOVE_MOUSE_ON_DEFAULT_BUTTON" value="true" />
   </component>
 </application>
