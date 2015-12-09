@@ -1,6 +1,0 @@
-<application>
-  <component name="UISettings">
-    <option name="WIDESCREEN_SUPPORT" value="true" />
-    <option name="COLOR_BLINDNESS" value="deuteranopia" />
-  </component>
-</application>
