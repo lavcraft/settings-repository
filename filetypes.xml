@@ -1,5 +1,5 @@
 <application>
-  <component name="FileTypeManager" version="16">
+  <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="MultipleObservableNotificationSpec" type="Groovy" />
       <mapping pattern=".retain" type="PLAIN_TEXT" />
