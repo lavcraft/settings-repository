@@ -24,6 +24,7 @@
       <mapping ext="j2" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="bson" type="PLAIN_TEXT" />
+      <mapping ext="bemhtml" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
