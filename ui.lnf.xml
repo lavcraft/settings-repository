@@ -3,5 +3,6 @@
     <option name="WIDESCREEN_SUPPORT" value="true" />
     <option name="RIGHT_HORIZONTAL_SPLIT" value="true" />
     <option name="MOVE_MOUSE_ON_DEFAULT_BUTTON" value="true" />
+    <option name="MAX_LOOKUP_LIST_HEIGHT" value="12" />
   </component>
 </application>
