@@ -19,6 +19,7 @@
       <mapping pattern="vagrant" type="PLAIN_TEXT" />
       <mapping pattern="inventory" type="PLAIN_TEXT" />
       <mapping pattern="TESTME" type="PLAIN_TEXT" />
+      <mapping ext="factories" type="PLAIN_TEXT" />
       <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="formatlog" type="PLAIN_TEXT" />
       <mapping ext="j2" type="PLAIN_TEXT" />
