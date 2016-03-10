@@ -1,0 +1,8 @@
+<application>
+  <component name="ExternalResourceManagerImpl">
+    <resource url="http://www.springframework.org/schema/integration/amqp" location="$USER_HOME$/Library/Caches/IntelliJIdea16/extResources/97844a53_spring-integration-amqp.xsd" />
+    <resource url="http://www.springframework.org/schema/integration/amqp/spring-integration-amqp.xsd" location="$USER_HOME$/Library/Caches/IntelliJIdea16/extResources/97844a53_spring-integration-amqp.xsd" />
+    <resource url="http://www.springframework.org/schema/integration/spring-integration-4.2.xsd" location="$USER_HOME$/Library/Caches/IntelliJIdea16/extResources/fd511df2_spring-integration-4.2.xsd" />
+    <resource url="http://www.springframework.org/schema/integration/spring-integration.xsd" location="$USER_HOME$/Library/Caches/IntelliJIdea16/extResources/a54783c7_spring-integration.xsd" />
+  </component>
+</application>
