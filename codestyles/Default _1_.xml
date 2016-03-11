@@ -1,6 +1,9 @@
 <code_scheme name="Default (1)">
   <option name="LINE_SEPARATOR" value="&#10;" />
   <option name="FORMATTER_TAGS_ENABLED" value="true" />
+  <MultiMarkdownCodeStyleSettings>
+    <option name="RIGHT_MARGIN" value="72" />
+  </MultiMarkdownCodeStyleSettings>
   <XML>
     <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
   </XML>
