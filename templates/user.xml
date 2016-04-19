@@ -674,7 +674,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="gFindArtifact" value="project.configurations.docs.resolvedConfiguration.resolvedArtifacts.find {&#10;      def version = it.moduleVersion.id&#10;      &#10;      if (dependencyName.startsWith(':'))&#10;        return version.name version.name == dependencyName.replace(':', '') dependencyName.replace(':', '')&#10;      else {&#10;        return dependencyName dependencyName == version.toString() version.toString()&#10;      }&#10;    }" toReformat="true" toShortenFQNames="true">
+  <template name="gFindArtifact" value="project.configurations.docs.resolvedConfiguration.resolvedArtifacts.find {&#10;      def version = it.moduleVersion.id&#10;      &#10;      if (dependencyName.startsWith(':'))&#10;        return version.name == dependencyName.replace(':', '')&#10;      else {&#10;        return dependencyName == version.toString()&#10;      }&#10;    }" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
