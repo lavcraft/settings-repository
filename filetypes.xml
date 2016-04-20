@@ -26,6 +26,7 @@
       <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="bson" type="PLAIN_TEXT" />
       <mapping ext="bemhtml" type="PLAIN_TEXT" />
+      <mapping ext="ym" type="YAML_EX" />
     </extensionMap>
   </component>
 </application>
