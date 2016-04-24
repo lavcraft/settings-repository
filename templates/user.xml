@@ -2074,7 +2074,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="gradleArtifactoryConfigure" value="artifactory {&#10;  contextUrl = &quot;http://192.168.99.100:8080/artifactory&quot;&#10;  publish {&#10;    defaults {&#10;      publications('mavenJava')&#10;    }&#10;    repository {&#10;      repoKey = 'libs-release-local'&#10;      maven = true&#10;&#10;    }&#10;  }&#10;  resolve {&#10;    repository {&#10;      repoKey = 'libs-release'&#10;      maven = true&#10;    }&#10;  }&#10;}" toReformat="true" toShortenFQNames="true">
+  <template name="gradleArtifactoryConfigure" value="artifactory {&#10;  contextUrl = &quot;http://192.168.99.100:8080/artifactory&quot;&#10;  publish {&#10;    defaults {&#10;      publications('mavenJava')&#10;    }&#10;    repository {&#10;      repoKey = 'libs-release-local'&#10;      maven = true&#10;&#10;    }&#10;  }&#10;  resolve {&#10;    repository {&#10;      repoKey = 'libs-release'&#10;      maven = true&#10;    }&#10;  }&#10;}&#10;&#10;artifactoryPublish.dependsOn 'generatePomFileForMavenJavaPublication'" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
