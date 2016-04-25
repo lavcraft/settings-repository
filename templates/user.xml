@@ -2242,7 +2242,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="jetFbiThriftHandler" value="  @ru.trylogic.spring.boot.thrift.annotation.ThriftHandler(&quot;/api&quot;)&#10;  public static class ThriftController implements info.developerblog.services.user.TFbiService.Iface {&#10;&#10;    @java.lang.Override&#10;    info.developerblog.services.user.TFbiResponse fink(info.developerblog.services.auth.TUser user, int hippoCount, int fee) throws org.apache.thrift.TException {&#10;      log.info 'fink: {}, {}, {}', user, hippoCount, fee&#10;      return new info.developerblog.services.user.TFbiResponse().setLastFink('ISO8601 (' 'ISO8601 (' + ZonedDateTime.now() ZonedDateTime.now() 'ISO8601 (' + ZonedDateTime.now() + ')' ')')&#10;    }&#10;  }" toReformat="true" toShortenFQNames="true">
+  <template name="jetFbiThriftHandler" value="  @ru.trylogic.spring.boot.thrift.annotation.ThriftHandler(&quot;/api&quot;)&#10;  public static class ThriftController implements info.developerblog.services.user.TFbiService.Iface {&#10;&#10;    @java.lang.Override&#10;    info.developerblog.services.user.TFbiResponse fink(info.developerblog.services.auth.TUser user, int hippoCount, int fee) throws org.apache.thrift.TException {&#10;      log.info 'fink: {}, {}, {}', user, hippoCount, fee&#10;      return new info.developerblog.services.user.TFbiResponse().setLastFink('ISO8601 (' +  ZonedDateTime.now() + ')')&#10;    }&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
