@@ -2432,7 +2432,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="jetDockerEntry" value="$NAME$:&#10;  image: $NAME$&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;8080&quot;&#10;  environment:&#10;    - &quot;SERVICE_NAME=$NAME$&quot;&#10;    - &quot;SERVICE_CHECK_HTTP=/health&quot;&#10;    - &quot;SPRING_PROFILES_ACTIVE=consul&quot;" toReformat="true" toShortenFQNames="true">
+  <template name="jeeDockerEntry" value="$NAME$:&#10;  image: $NAME$&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;8080&quot;&#10;  environment:&#10;    - &quot;SERVICE_NAME=$NAME$&quot;&#10;    - &quot;SERVICE_CHECK_HTTP=/health&quot;&#10;    - &quot;SPRING_PROFILES_ACTIVE=consul&quot;" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -2487,7 +2487,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="jetDockerConsul" value="consul:&#10;  image: gliderlabs/consul-server:0.5&#10;  container_name: consul&#10;  ports:&#10;    - &quot;8400:8400&quot;&#10;    - &quot;8500:8500&quot;&#10;    - &quot;53:8600/udp&quot;&#10;  command: &quot;-bootstrap -advertise 192.168.99.100 -ui-dir /ui&quot;&#10;  restart: always&#10;&#10;registrator:&#10;  image: gliderlabs/registrator&#10;  container_name: registrator&#10;  net: &quot;host&quot;&#10;  volumes:&#10;    - &quot;/var/run/docker.sock:/tmp/docker.sock&quot;&#10;  command: &quot;-ip 192.168.99.100 consul://192.168.99.100:8500&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
+  <template name="jeeDockerConsul" value="consul:&#10;  image: gliderlabs/consul-server:0.5&#10;  container_name: consul&#10;  ports:&#10;    - &quot;8400:8400&quot;&#10;    - &quot;8500:8500&quot;&#10;    - &quot;53:8600/udp&quot;&#10;  command: &quot;-bootstrap -advertise 192.168.99.100 -ui-dir /ui&quot;&#10;  restart: always&#10;&#10;registrator:&#10;  image: gliderlabs/registrator&#10;  container_name: registrator&#10;  net: &quot;host&quot;&#10;  volumes:&#10;    - &quot;/var/run/docker.sock:/tmp/docker.sock&quot;&#10;  command: &quot;-ip 192.168.99.100 consul://192.168.99.100:8500&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -2541,7 +2541,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="jetDockerGateway" value="gateway-server:&#10;  image: gateway-server&#10;  container_name: gateway-server&#10;  ports:&#10;    - &quot;9000:9000&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
+  <template name="jeeDockerGateway" value="gateway-server:&#10;  image: gateway-server&#10;  container_name: gateway-server&#10;  ports:&#10;    - &quot;9000:9000&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
