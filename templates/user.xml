@@ -2432,7 +2432,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="jeeDockerEntry" value="$NAME$:&#10;  image: $NAME$&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;8080&quot;&#10;  environment:&#10;    - &quot;SERVICE_NAME=$NAME$&quot;&#10;    - &quot;SERVICE_CHECK_HTTP=/health&quot;&#10;    - &quot;SPRING_PROFILES_ACTIVE=consul&quot;" toReformat="true" toShortenFQNames="true">
+  <template name="jeeDockerEntry" value="$NAME$:&#10;  image: $NAME$&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;8080&quot;&#10;  links:&#10;    - payment-service&#10;    - rabbitmq&#10;    - eureka-server&#10;  environment:&#10;    RABBITMQ_HOST: rabbitmq&#10;    EUREKA_SERV: http://eureka:8761/eureka/&#10;    SERVICE_NAME: $NAME$&#10;    SERVICE_CHECK_HTTP: /health&#10;    SPRING_PROFILES_ACTIVE: consul&#10;    SPRING_ZIPKIN_BASEURL: http://192.168.99.100:9000    " toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -2487,7 +2487,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="jeeDockerConsul" value="consul:&#10;  image: gliderlabs/consul-server:0.5&#10;  container_name: consul&#10;  ports:&#10;    - &quot;8400:8400&quot;&#10;    - &quot;8500:8500&quot;&#10;    - &quot;53:8600/udp&quot;&#10;  command: &quot;-bootstrap -advertise 192.168.99.100 -ui-dir /ui&quot;&#10;  restart: always&#10;&#10;registrator:&#10;  image: gliderlabs/registrator&#10;  container_name: registrator&#10;  net: &quot;host&quot;&#10;  volumes:&#10;    - &quot;/var/run/docker.sock:/tmp/docker.sock&quot;&#10;  command: &quot;-ip 192.168.99.100 consul://192.168.99.100:8500&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
+  <template name="jeeDockerConsul" value="consul:&#10;  image: gliderlabs/consul-server:0.5&#10;  container_name: consul&#10;  ports:&#10;    - &quot;8400:8400&quot;&#10;    - &quot;8500:8500&quot;&#10;    - &quot;53:8600/udp&quot;&#10;  command: &quot;-bootstrap -advertise 192.168.99.100 -ui-dir /ui&quot;&#10;  restart: always&#10;  &#10;registrator:&#10;  image: gliderlabs/registrator&#10;  container_name: registrator&#10;  net: &quot;host&quot;&#10;  volumes:&#10;    - &quot;/var/run/docker.sock:/tmp/docker.sock&quot;&#10;  command: &quot;-ip 192.168.99.100 consul://192.168.99.100:8500&quot;&#10;  restart: always  &#10;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -2556,6 +2556,171 @@
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
       <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="AsciiDoc" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SCALA" value="false" />
+      <option name="SCALA_XML" value="false" />
+      <option name="SCALA_COMMENT" value="false" />
+      <option name="SCALA_STRING" value="false" />
+      <option name="SCALA_CODE" value="false" />
+      <option name="SBT" value="false" />
+      <option name="SSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="KOTLIN_TOPLEVEL" value="false" />
+      <option name="KOTLIN_STATEMENT" value="false" />
+      <option name="KOTLIN_CLASS" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="false" />
+      <option name="KOTLIN_COMMENT" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="jeeDockerTurbine" value="turbine-server:&#10;  image: turbine-server&#10;  container_name: turbine-server&#10;  dns: 172.17.0.1&#10;  environment:&#10;    RABBITMQ_HOST: rabbitmq&#10;  links:&#10;    - rent-service&#10;    - payment-service&#10;    - rabbitmq&#10;  ports:&#10;    - &quot;9001:9001&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="R" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="AsciiDoc" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SCALA" value="false" />
+      <option name="SCALA_XML" value="false" />
+      <option name="SCALA_COMMENT" value="false" />
+      <option name="SCALA_STRING" value="false" />
+      <option name="SCALA_CODE" value="false" />
+      <option name="SBT" value="false" />
+      <option name="SSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="KOTLIN_TOPLEVEL" value="false" />
+      <option name="KOTLIN_STATEMENT" value="false" />
+      <option name="KOTLIN_CLASS" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="false" />
+      <option name="KOTLIN_COMMENT" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="jeeDockerOpsServer" value="ops-server:&#10;  image: ops-server&#10;  container_name: ops-server&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;9411:9411&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="R" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="GAUGE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="AsciiDoc" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SCALA" value="false" />
+      <option name="SCALA_XML" value="false" />
+      <option name="SCALA_COMMENT" value="false" />
+      <option name="SCALA_STRING" value="false" />
+      <option name="SCALA_CODE" value="false" />
+      <option name="SBT" value="false" />
+      <option name="SSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="KOTLIN_TOPLEVEL" value="false" />
+      <option name="KOTLIN_STATEMENT" value="false" />
+      <option name="KOTLIN_CLASS" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="false" />
+      <option name="KOTLIN_COMMENT" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="jeeDockerGatewayServer" value="gateway-server:&#10;  image: gateway-server&#10;  container_name: gateway-server&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;9000:9000&quot;&#10;  environment:&#10;    EUREKA_SERV: http://eureka:8761/eureka/&#10;    RABBITMQ_HOST: rabbitmq&#10;  links:&#10;    - rent-service&#10;    - payment-service&#10;    - turbine-server&#10;    - ops-server&#10;    - rabbitmq&#10;    - eureka-server&#10;  restart: always" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="R" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
