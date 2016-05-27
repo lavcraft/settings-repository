@@ -2,2455 +2,275 @@
   <template name="tSocketServer" value="try {&#10;  TServerTransport serverTransport = new TServerSocket(&#10;      new InetSocketAddress(InetAddress.getLocalHost(), port));&#10;  TProcessor processor = new TInvestigatingService.Processor&lt;&gt;(&#10;      (TName name) -&gt; &quot;Where is &quot;+$NAME$+&quot;?&quot;&#10;  );&#10;  server = new TSimpleServer(new TServer.Args(serverTransport).processor(processor));&#10;&#10;  System.out.println(&quot;Starting the simple server...&quot;);&#10;  server.serve();&#10;} catch (Exception e) {&#10;  e.printStackTrace();&#10;}" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="performInvestigateClient" value="private void perform(example.TInvestigatingService.Client client) throws org.apache.thrift.TException {&#10;    assert client.whereIs(new example.TName()&#10;        .setFirstName(&quot;Josh&quot;)&#10;        .setSecondName(&quot;Long&quot;))&#10;        .equals(&quot;Where is Josh?&quot;);&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="tServerAwait" value="while(server == null || !server.isServing()){&#10;      java.util.concurrent.TimeUnit.MILLISECONDS.sleep(100);&#10;    }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="tSocketSpringTest" value="@org.junit.runner.RunWith(org.springframework.test.context.junit4.SpringJUnit4ClassRunner.class)&#10;@org.springframework.boot.test.SpringApplicationConfiguration(classes = {&#10;    info.developerblog.examples.thirft.simpleclient.SimpleClientApplication.class&#10;})" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="autoconfigureBuildGradle" value="apply plugin: 'groovy'&#10;&#10;dependencies {&#10;  provided 'org.apache.thrift:libthrift'&#10;  provided &quot;org.springframework.boot:spring-boot-starter-web&quot;&#10;  provided &quot;org.springframework.boot:spring-boot-starter-actuator&quot;&#10;&#10;  provided &quot;org.springframework.boot:spring-boot-configuration-processor&quot;&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="registratorStub" value="@org.springframework.context.annotation.Configuration&#10;public static class Registrator extends org.springframework.boot.context.embedded.RegistrationBean implements org.springframework.context.ApplicationContextAware {&#10;    @lombok.Setter&#10;    org.springframework.context.ApplicationContext applicationContext;&#10;&#10;    @java.lang.Override&#10;    public void onStartup(javax.servlet.ServletContext servletContext) throws javax.servlet.ServletException {&#10;&#10;    }&#10;  }" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="findIfaceAndProcessor" value="java.util.Arrays.stream(beanObject.getClass().getInterfaces())&#10;          .filter(aClass -&gt; aClass.getName().endsWith(&quot;$Iface&quot;))&#10;          .findFirst()&#10;          .ifPresent(aiFaceClass -&gt; {&#10;            java.lang.Class&lt;?&gt; processor = java.util.Arrays.stream(aiFaceClass.getEnclosingClass().getDeclaredClasses())&#10;                .filter(aClass -&gt; aClass.getName().endsWith(&quot;$Processor&quot;))&#10;                .findFirst()&#10;                .orElse(null);&#10;&#10;            initMapping(name, beanObject, servletContext, aiFaceClass, processor);&#10;          });" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="initServletMapping" value="java.lang.reflect.Constructor&lt;org.apache.thrift.TProcessor&gt; constructor = (java.lang.reflect.Constructor&lt;org.apache.thrift.TProcessor&gt;) processor.getConstructor(aiFaceClass);&#10;      org.apache.thrift.TProcessor tProcessor = org.springframework.beans.BeanUtils.instantiateClass(constructor, beanObject);&#10;      org.apache.thrift.server.TServlet tServlet = new org.apache.thrift.server.TServlet(tProcessor, new org.apache.thrift.protocol.TBinaryProtocol.Factory());&#10;      javax.servlet.ServletRegistration.Dynamic dynamic = servletContext.addServlet(name, tServlet);&#10;      dynamic.addMapping(&quot;/&quot; + name);" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="tAutoconfigureSpockTest" value="org.springframework.context.annotation.AnnotationConfigApplicationContext context&#10;&#10;  def setup() {&#10;    context = new org.springframework.context.annotation.AnnotationConfigApplicationContext()&#10;  }&#10;&#10;  def clean() {&#10;    context.close()&#10;  }&#10;&#10;  @spock.lang.Unroll&#10;  def 'should enable auto configuration by thrift.enabled=#enableProperty property'() {&#10;    given:&#10;    EnvironmentTestUtils.addEnvironment(context, enableProperty)&#10;    context.register(ThriftAutoConfiguration)&#10;    context.refresh()&#10;&#10;    expect:&#10;    context.containsBean('tProtocolFactory') == beanIsContained&#10;&#10;    where:&#10;    enableProperty       | beanIsContained&#10;    'thrift.server.enable=true'  | true &#10;    'thrift.server.enable=false' | false&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTaskCreate" value="tasks.create(&#10;          name: extension.documentationDistTaskName,&#10;          type: Zip,&#10;          group: 'Documentation',&#10;          description: 'Create documentation sources archive')" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gDistConfigure" value="def dTask = tasks.findByName('dist').configure {&#10;          from fileTree(dir: project.file('src/docs/'), include: '**/*.adoc')&#10;        }" toReformat="true" toShortenFQNames="true" deactivated="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gDependencyDebugOutput" value="      project.logger.debug &quot;&quot;&quot;&#10;      dependencyName              $dependencyName&#10;      fileName                    $dependencyInsideFileName&#10;      it.moduleVersion.id.name    ${version.name}&#10;      it.moduleVersion.id.group   ${version.group}&#10;      it.moduleVersion.id.version ${version.version}&#10;      &quot;&quot;&quot;.stripMargin().stripIndent()&#10;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gFindArtifact" value="configurations.docs.resolvedConfiguration.resolvedArtifacts.find {&#10;      def version = it.moduleVersion.id&#10;      &#10;      if (dependencyName.startsWith(':'))&#10;        return version.name == dependencyName.replace(':', '')&#10;      else {&#10;        return dependencyName == version.toString()&#10;      }&#10;    }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gAsciidoctorClosure" value="asciidoctor {&#10;  sourceDir project.projectDir&#10;&#10;  sources {&#10;    setIncludes fileTree(dir: projectDir, include: '**/*.adoc').collect { relativePath(it) }&#10;  }&#10;&#10;  outputDir = new java.io.File(&quot;$buildDir/docs&quot;)&#10;  attributes(['source-highlighter': 'coderay',&#10;              doctype             : 'book',&#10;              toc                 : 'left',&#10;              idprefix            : '',&#10;              idseparator         : '-'])&#10;&#10;  afterEvaluate {&#10;    org.asciidoctor.extension.DependencyIncludeProcessor.project = project&#10;  }&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gDocumentationExtension" value="DocumentationPluginExtension extension = extensions.create(EXTENSION_NAME_DOCS, DocumentationPluginExtension, project)" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gAsciidocInputsFile" value="inputs.file configurations.docs.incoming.collect { it.files }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gConfigurationsDocumentationClosure" value="configurations {&#10;  documentationConfiguration&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTaskDistClosure" value="task dist(type: Zip) {&#10;  from fileTree(dir: file('src/docs/'), include: '**/*.adoc')&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTestDependencies" value="testCompile('org.spockframework:spock-core:1.0-groovy-2.4') {&#10;    exclude module: 'groovy-all'&#10;  }&#10;  testCompile 'com.netflix.nebula:nebula-test:4.0.0'&#10;  " toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gAllProjectDeps" value="          dependencies {&#10;            (rootProject.subprojects rootProject.subprojects - project project).each {&#10;              &quot;${extension.documentationSourceConfigurationName}&quot; dependencies.project(path: ':' ':' + it.name it.name, configuration: extension.documentationConfigurationName)&#10;            }&#10;          }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTestTemporaryFolder" value="@org.junit.Rule final org.junit.rules.TemporaryFolder testProjectDir = new org.junit.rules.TemporaryFolder()" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTestGradleRunnerSkeleton" value="def &quot;execution of documentation distribution task is up to date&quot;() {&#10;    given:&#10;&#10;    buildFile &lt;&lt; &quot;&quot;&quot;&#10;            buildscript {&#10;              repositories { jcenter() }&#10;              dependencies {&#10;                classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'&#10;              }&#10;            }&#10;&#10;            apply plugin: 'org.asciidoctor.convert'&#10;            apply plugin: 'ru.jpoint.documentation'&#10;&#10;            docs {&#10;              debug = true&#10;            }&#10;&#10;            dependencies {&#10;              asciidoctor 'org.asciidoctor:asciidoctorj:1.5.4'&#10;              docs 'org.slf4j:slf4j-api:1.7.2'&#10;            }&#10;        &quot;&quot;&quot;&#10;    when:&#10;    def result = GradleRunner.create()&#10;                .withProjectDir(testProjectDir.root)&#10;                .withArguments('documentationDistZip')&#10;                .build()&#10;&#10;    then:&#10;    result.task(&quot;:documentationDistZip&quot;).outcome == TaskOutcome.UP_TO_DATE&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTestGenerateClasspath" value="def pluginClasspathResource = getClass().classLoader.findResource(&quot;plugin-classpath.txt&quot;)&#10;    if (pluginClasspathResource == null) {&#10;      throw new java.lang.IllegalStateException(&quot;Did not find plugin classpath resource, run `testClasses` build task.&quot;)&#10;    }&#10;&#10;    pluginClasspath = pluginClasspathResource.readLines()&#10;        .collect { new java.io.File(it) }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTestClasspath" value="def classpathString = pluginClasspath&#10;        .collect { it.absolutePath.replace('\\', '\\\\') }&#10;        .collect { &quot;'$it'&quot; }&#10;        .join(&quot;, &quot;)" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTestNebulaSetup" value="def setup() {&#10;    buildFile &lt;&lt; &quot;&quot;&quot;&#10;            buildscript {&#10;              repositories { jcenter() }&#10;              dependencies {&#10;                classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'&#10;              }&#10;            }&#10;&#10;            apply plugin: 'org.asciidoctor.convert'&#10;            apply plugin: DocumentationPlugin&#10;            &#10;            docs {&#10;              debug = true&#10;            }&#10;&#10;            dependencies {&#10;              asciidoctor 'org.asciidoctor:asciidoctorj:1.5.4'&#10;              docs 'org.slf4j:slf4j-api:1.7.2'&#10;            }&#10;&quot;&quot;&quot;&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gTestNebulaSkeleton" value="def &quot;execution of documentation distribution task is success&quot;() {&#10;    when:&#10;&#10;    then:&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="dvpsDriverRunTask" value="if (!repositoryUrl.isPresent()) {&#10;            log.info(&quot;Decline offer {}&quot;, offerEvaluation.getOffer().getId());&#10;            schedulerDriver.declineOffer(offerEvaluation.getOffer().getId());&#10;          } else {&#10;            java.lang.String s = repositoryUrl.get();&#10;            java.lang.String taskId = java.util.UUID.randomUUID() + &quot;build-&quot; + s;&#10;            org.apache.mesos.Protos.TaskInfo taskInfo = taskInfoGradleBuildDocker.createWithCommand(taskId, offerEvaluation.getOffer(), offerEvaluation.getResources(), s);&#10;            log.info(&quot;Try to run task {}&quot;, taskId, taskInfo);&#10;            schedulerDriver.launchTasks(java.util.Collections.singleton(offerEvaluation.getOffer().getId()), java.util.Collections.singleton(taskInfo));&#10;            stateRepository.store(taskInfo);&#10;          }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="true" />
       <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="dvpsBuildService" value="java.util.concurrent.BlockingQueue&lt;java.lang.String&gt; urlForBuild;&#10;  @org.springframework.beans.factory.annotation.Autowired&#10;  com.containersolutions.mesos.scheduler.TaskInfoGradleBuildDocker taskInfoGradleBuildDocker;&#10;&#10;  public void add(java.lang.String repoUrl) {&#10;    urlForBuild.add(repoUrl);&#10;  }&#10;&#10;  public java.util.Optional&lt;java.lang.String&gt; getFirst() {&#10;    if (urlForBuild.isEmpty()) return java.util.Optional.empty();&#10;    return java.util.Optional.of(urlForBuild.poll());&#10;  }&#10;&#10;  public BuildService() {&#10;    this.urlForBuild = new java.util.concurrent.ArrayBlockingQueue&lt;&gt;(10);&#10;  }&#10;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="dvpsSshKeyscan" value="mkdir -p ~/.ssh &amp;&amp; cat /dev/zero | ssh-keygen -q -N &quot;&quot; &amp;&amp; ssh-keyscan -t rsa github.com &gt; ~/.ssh/known_hosts &amp;&amp;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="true" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="dvpsController" value="@org.springframework.beans.factory.annotation.Autowired&#10;  ru.jpoint.dvps.mesos.BuildService buildService;&#10;&#10;  @org.springframework.web.bind.annotation.RequestMapping(value&quot;/tasks&quot;)&#10;  public org.springframework.http.ResponseEntity tasks(@org.springframework.web.bind.annotation.RequestParam java.lang.String repoUrl) {&#10;    buildService.add(repoUrl);&#10;&#10;    return org.springframework.http.ResponseEntity.ok().build();&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="settingsGradleProjectName" value="rootProject.children.each { project -&gt;&#10;  project.buildFileName = &quot;${project.name}.gradle&quot;&#10;  assert project.projectDir.isDirectory()&#10;  assert project.buildFile.exists()&#10;  assert project.buildFile.isFile()&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gradleResolutionStrategy" value="resolutionStrategy.eachDependency { org.gradle.api.artifacts.DependencyResolveDetails details -&gt;&#10;    if (details.requested.group == '$GROUP$') {&#10;      details.useVersion '$VERSION$'&#10;    }&#10;  }" toReformat="true" toShortenFQNames="true">
     <variable name="GROUP" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VERSION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gradleDependencyManagement" value="dependencyManagement {&#10;  dependencies {&#10;    dependency 'org.springframework:spring-core:4.0.3.RELEASE'&#10;    dependency group:'commons-logging', name:'commons-logging', version:'1.1.2'&#10;  }&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gradleBom" value="imports {&#10;    mavenBom 'io.spring.platform:platform-bom:1.0.1.RELEASE'&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gradlePluginSpringDependencyManagement" value="plugins {&#10;  id &quot;io.spring.dependency-management&quot; version &quot;0.5.6.RELEASE&quot;&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gradlePublishing" value="apply plugin: 'maven-publish'&#10;publishing {&#10;  publications {&#10;    mavenJava(MavenPublication) {&#10;      from components.java&#10;    }&#10;  }&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gradleBuildScriptArtifactory" value="buildscript {&#10;  repositories {&#10;    maven {&#10;      url 'http://192.168.99.100:8080/artifactory/plugins-release'&#10;      credentials {&#10;        username = &quot;${artifactory_user}&quot;&#10;        password = &quot;${artifactory_password}&quot;&#10;      }&#10;    }&#10;  }&#10;  dependencies {&#10;    classpath &quot;org.jfrog.buildinfo:build-info-extractor-gradle:4+&quot;&#10;  }&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="gradleArtifactoryConfigure" value="artifactory {&#10;  contextUrl = &quot;http://192.168.99.100:8080/artifactory&quot;&#10;  publish {&#10;    defaults {&#10;      publications('mavenJava')&#10;    }&#10;    repository {&#10;      repoKey = 'libs-release-local'&#10;      maven = true&#10;&#10;    }&#10;  }&#10;  resolve {&#10;    repository {&#10;      repoKey = 'libs-release'&#10;      maven = true&#10;    }&#10;  }&#10;}&#10;&#10;artifactoryPublish.dependsOn 'generatePomFileForMavenJavaPublication'" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jetFbiCommand" value="class FbiCommand extends com.netflix.hystrix.HystrixCommand&lt;info.developerblog.services.user.TFbiResponse&gt; {&#10;  private final info.developerblog.services.user.TFbiService.Client client&#10;  private final int fee&#10;  private final int hippoCount&#10;&#10;  protected FbiCommand(com.netflix.hystrix.HystrixCommandGroupKey group,&#10;                       info.developerblog.services.user.TFbiService.Client client,&#10;                       int hippoCount, int fee) {&#10;    super(group)&#10;    this.hippoCount = hippoCount&#10;    this.fee = fee&#10;    this.client = client&#10;  }&#10;&#10;  @java.lang.Override&#10;  protected info.developerblog.services.user.TFbiResponse run() throws java.lang.Exception {&#10;    return client.fink(new info.developerblog.services.auth.TAuthToken(&quot;ABCD&quot;), hippoCount, fee)&#10;  }&#10;&#10;  @java.lang.Override&#10;  protected info.developerblog.services.user.TFbiResponse getFallback() {&#10;    println &quot;fallback&quot;&#10;    return new info.developerblog.services.user.TFbiResponse()&#10;  }&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY_STATEMENT" value="true" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jetAuthTokenExchanger" value="    @org.springframework.context.annotation.Bean&#10;    ru.aatarasoff.thrift.api.gateway.core.AuthTokenExchanger&lt;info.developerblog.services.auth.TAuthToken, info.developerblog.services.auth.TUser&gt; authTokenExchanger() {&#10;        return new ru.aatarasoff.thrift.api.gateway.core.AuthTokenExchanger&lt;info.developerblog.services.auth.TAuthToken, info.developerblog.services.auth.TUser&gt;() {&#10;            @java.lang.Override&#10;            info.developerblog.services.auth.TAuthToken createEmptyAuthToken() {&#10;                return new info.developerblog.services.auth.TAuthToken()&#10;            }&#10;&#10;            @java.lang.Override&#10;            info.developerblog.services.auth.TUser process(info.developerblog.services.auth.TAuthToken authToken) throws org.apache.thrift.TException {&#10;                if (&quot;ABCD&quot;.equals(authToken.getToken())) {&#10;                    return new info.developerblog.services.auth.TUser().setUserId(1L)&#10;                }&#10;&#10;                throw new info.developerblog.services.auth.TUnauthorizedException(&quot;!!!&quot;)&#10;            }&#10;        }&#10;    }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jetFbiThriftHandler" value="  @ru.trylogic.spring.boot.thrift.annotation.ThriftHandler(&quot;/api&quot;)&#10;  public static class ThriftController implements info.developerblog.services.user.TFbiService.Iface {&#10;&#10;    @java.lang.Override&#10;    info.developerblog.services.user.TFbiResponse fink(info.developerblog.services.auth.TUser user, int hippoCount, int fee) throws org.apache.thrift.TException {&#10;      log.info 'fink: {}, {}, {}', user, hippoCount, fee&#10;      return new info.developerblog.services.user.TFbiResponse().setLastFink('ISO8601 (' +  ZonedDateTime.now() + ')')&#10;    }&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jetFbiTest" value="  @org.junit.Test&#10;  public void testSimpleCall() {&#10;    info.developerblog.services.auth.TUser user = new info.developerblog.services.auth.TUser().setUserId(1L);&#10;    info.developerblog.services.user.TFbiResponse response = client.fink(user, 2, 10)&#10;&#10;    println response.getLastFink()&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jetParrotRequestMapping" value="  @org.springframework.web.bind.annotation.RequestMapping(value = '/fee', method = RequestMethod.GET)&#10;  def fee() {&#10;    return [parrot_fee: ThreadLocalRandom.current().nextInt(100)]&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jetParrotFeignClient" value="@org.springframework.cloud.netflix.feign.FeignClient(&quot;parrot-service&quot;)&#10;public interface ParrotClient {&#10;  @org.springframework.web.bind.annotation.RequestMapping(value = &quot;/fee&quot;, method = org.springframework.web.bind.annotation.RequestMethod.GET, consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)&#10;  ru.joker.ParrotClient.ParrotResponse getFee();&#10;&#10;  @lombok.Data&#10;  @lombok.Builder&#10;  @lombok.NoArgsConstructor&#10;  @lombok.AllArgsConstructor&#10;  class ParrotResponse {&#10;    @com.fasterxml.jackson.annotation.JsonProperty(&quot;parrot_fee&quot;)&#10;    private int parrotFee;&#10;  }&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jetHippoRestController" value="@org.springframework.web.bind.annotation.RestController&#10;  public static class HippoController {&#10;    private java.util.concurrent.atomic.AtomicInteger hippoCount = new java.util.concurrent.atomic.AtomicInteger(Integer.MAX_VALUE);&#10;&#10;    @org.springframework.web.bind.annotation.RequestMapping(value = '/rent', method = RequestMethod.GET)&#10;    def rent(@org.springframework.web.bind.annotation.RequestParam(defaultValue = '1') java.lang.Integer hippoRequest) {&#10;      return [hippoRemain: hippoCount.getAndAdd(-1 * hippoRequest)]&#10;    }&#10;  }" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
       <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jeeDockerEntry" value="$NAME$:&#10;  image: $NAME$&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;8080&quot;&#10;  links:&#10;    - payment-service&#10;    - rabbitmq&#10;    - eureka-server&#10;  environment:&#10;    RABBITMQ_HOST: rabbitmq&#10;    EUREKA_SERV: http://eureka:8761/eureka/&#10;    SERVICE_NAME: $NAME$&#10;    SERVICE_CHECK_HTTP: /health&#10;    SPRING_PROFILES_ACTIVE: consul&#10;    SPRING_ZIPKIN_BASEURL: http://192.168.99.100:9000    " toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
       <option name="JSON" value="false" />
       <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="SQL" value="false" />
       <option name="ColdFusion" value="false" />
@@ -2458,53 +278,26 @@
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="AsciiDoc" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
       <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
       <option name="SBT" value="false" />
       <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
       <option name="HAML" value="false" />
       <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="jeeDockerConsul" value="consul:&#10;  image: gliderlabs/consul-server:0.5&#10;  container_name: consul&#10;  ports:&#10;    - &quot;8400:8400&quot;&#10;    - &quot;8500:8500&quot;&#10;    - &quot;53:8600/udp&quot;&#10;  command: &quot;-bootstrap -advertise 192.168.99.100 -ui-dir /ui&quot;&#10;  restart: always&#10;  &#10;registrator:&#10;  image: gliderlabs/registrator&#10;  container_name: registrator&#10;  net: &quot;host&quot;&#10;  volumes:&#10;    - &quot;/var/run/docker.sock:/tmp/docker.sock&quot;&#10;  command: &quot;-ip 192.168.99.100 consul://192.168.99.100:8500&quot;&#10;  restart: always  &#10;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
       <option name="JSON" value="false" />
       <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="SQL" value="false" />
       <option name="ColdFusion" value="false" />
@@ -2512,53 +305,26 @@
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="AsciiDoc" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
       <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
       <option name="SBT" value="false" />
       <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
       <option name="HAML" value="false" />
       <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="jeeDockerGateway" value="gateway-server:&#10;  image: gateway-server&#10;  container_name: gateway-server&#10;  ports:&#10;    - &quot;9000:9000&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
       <option name="JSON" value="false" />
       <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="SQL" value="false" />
       <option name="ColdFusion" value="false" />
@@ -2566,54 +332,27 @@
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="AsciiDoc" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
       <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
       <option name="SBT" value="false" />
       <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
       <option name="HAML" value="false" />
       <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="jeeDockerTurbine" value="turbine-server:&#10;  image: turbine-server&#10;  container_name: turbine-server&#10;  dns: 172.17.0.1&#10;  environment:&#10;    RABBITMQ_HOST: rabbitmq&#10;  links:&#10;    - rent-service&#10;    - payment-service&#10;    - rabbitmq&#10;  ports:&#10;    - &quot;9001:9001&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
       <option name="JSON" value="false" />
       <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
       <option name="R" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="SQL" value="false" />
       <option name="ColdFusion" value="false" />
@@ -2621,54 +360,27 @@
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="AsciiDoc" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
       <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
       <option name="SBT" value="false" />
       <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
       <option name="HAML" value="false" />
       <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="jeeDockerOpsServer" value="ops-server:&#10;  image: ops-server&#10;  container_name: ops-server&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;9411:9411&quot;&#10;  restart: always" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
       <option name="JSON" value="false" />
       <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
       <option name="R" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="SQL" value="false" />
       <option name="ColdFusion" value="false" />
@@ -2676,54 +388,27 @@
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="AsciiDoc" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
       <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
       <option name="SBT" value="false" />
       <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
       <option name="HAML" value="false" />
       <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="jeeDockerGatewayServer" value="gateway-server:&#10;  image: gateway-server&#10;  container_name: gateway-server&#10;  dns: 172.17.0.1&#10;  ports:&#10;    - &quot;9000:9000&quot;&#10;  environment:&#10;    EUREKA_SERV: http://eureka:8761/eureka/&#10;    RABBITMQ_HOST: rabbitmq&#10;  links:&#10;    - rent-service&#10;    - payment-service&#10;    - turbine-server&#10;    - ops-server&#10;    - rabbitmq&#10;    - eureka-server&#10;  restart: always" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
       <option name="JSON" value="false" />
       <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
       <option name="R" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="SQL" value="false" />
       <option name="ColdFusion" value="false" />
@@ -2731,253 +416,38 @@
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="AsciiDoc" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
       <option name="MAVEN" value="false" />
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
       <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
       <option name="SBT" value="false" />
       <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
       <option name="HAML" value="false" />
       <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="jeeInsuranceClient" value="@org.springframework.cloud.netflix.feign.FeignClient(value = &quot;insurance-service&quot;)&#10;public interface InsuranceClient {&#10;&#10;  @org.springframework.web.bind.annotation.RequestMapping(value = &quot;/fee&quot;, method = org.springframework.web.bind.annotation.RequestMethod.GET, consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)&#10;  int insurance();&#10;&#10;}&#10;" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="R" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jeePaymentClient" value="@FeignClient(value = &quot;payment-service&quot;, fallback = PaymentClient.PaymentClientFallback.class)&#10;public interface PaymentClient {&#10;&#10;  @RequestMapping(value = &quot;/fee&quot;, method = RequestMethod.GET, consumes = MediaType.APPLICATION_JSON_VALUE)&#10;  PaymentResponse payment();&#10;&#10;  @Slf4j&#10;  class PaymentClientFallback implements PaymentClient {&#10;&#10;    @Override&#10;    public PaymentResponse payment() {&#10;      log.warn(&quot;Use fallback&quot;);&#10;      return new PaymentResponse(-1, &quot;&quot;);&#10;    }&#10;&#10;  }&#10;&#10;  @Data&#10;  @Builder&#10;  @NoArgsConstructor&#10;  @AllArgsConstructor&#10;  class PaymentResponse {&#10;    int fee;&#10;    String hash;&#10;  }&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="R" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jeeBlockchainClient" value="@org.springframework.cloud.netflix.feign.FeignClient(value = &quot;blockchain-service&quot;)&#10;public interface BlockchainClient {&#10;&#10;  @org.springframework.web.bind.annotation.RequestMapping(value = &quot;/gen&quot;, method = org.springframework.web.bind.annotation.RequestMethod.GET, consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)&#10;  java.lang.String gen();&#10;&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="R" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="jeeSecurityClient" value="@org.springframework.cloud.netflix.feign.FeignClient(value = &quot;security-service&quot;)&#10;public interface SecurityClient {&#10;&#10;  @org.springframework.web.bind.annotation.RequestMapping(value = &quot;/audit&quot;, method = org.springframework.web.bind.annotation.RequestMethod.POST , consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)&#10;  org.springframework.http.ResponseEntity&lt;java.lang.Void&gt; audit(java.util.Map params);&#10;&#10;}" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
       <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="R" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="SQL" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="GAUGE" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="AsciiDoc" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SCALA_XML" value="false" />
-      <option name="SCALA_COMMENT" value="false" />
-      <option name="SCALA_STRING" value="false" />
-      <option name="SCALA_CODE" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="KOTLIN_TOPLEVEL" value="false" />
-      <option name="KOTLIN_STATEMENT" value="false" />
-      <option name="KOTLIN_CLASS" value="false" />
-      <option name="KOTLIN_EXPRESSION" value="false" />
-      <option name="KOTLIN_COMMENT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
 </templateSet>
