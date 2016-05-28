@@ -4,24 +4,4 @@
     <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="B" value="{$SELECTION$}" description="Surround with {}" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="JSP" value="false" />
-      <option name="OTHER" value="true" />
-    </context>
-  </template>
-  <template name="P" value="($SELECTION$)" description="Surround with ()" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML" value="false" />
-      <option name="XML" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="JSP" value="false" />
-      <option name="OTHER" value="true" />
-    </context>
-  </template>
 </templateSet>
