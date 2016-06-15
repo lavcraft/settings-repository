@@ -3,7 +3,9 @@
     <variable name="DOLLAR" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="false" />
     <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="false" />
     <variable name="EXPR_COPY" expression="EXPR" defaultValue="" alwaysStopAt="true" />
-    <context />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+    </context>
   </template>
   <template name="linv" value="log.info(&quot;$EXPR_COPY$ = {}&quot;, $EXPR$)" description="Prints a value to System.out" toReformat="true" toShortenFQNames="true">
     <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
