@@ -11,6 +11,7 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.json" value="JSON" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.xml" value="XML" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.groovy" value="Groovy" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.jshintignore" value="JSHint" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.json" value="JSON" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.xml" value="XML" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_24" value="XML" />
@@ -70,5 +71,6 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_71" value="JSON" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_72" value="Groovy" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_73" value="JSON" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.json" value="JSON" />
   </component>
 </application>
