@@ -73,5 +73,6 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_72" value="Groovy" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_73" value="JSON" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.json" value="JSON" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.xml" value="XML" />
   </component>
 </application>
