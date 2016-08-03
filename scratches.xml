@@ -5,6 +5,7 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js" value="Apple JS" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.jshintignore" value="JSHint" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json" value="JSON" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.rb" value="ruby" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" value="TEXT" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.xml" value="XML" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.groovy" value="Groovy" />
@@ -12,6 +13,8 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.json" value="JSON" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.xml" value="XML" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_10.json" value="JSON" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_11.json" value="JSON" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_12.json" value="JSON" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.groovy" value="Groovy" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.jshintignore" value="JSHint" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.json" value="JSON" />
