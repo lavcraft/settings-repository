@@ -286,9 +286,6 @@
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="HAML" value="false" />
       <option name="RUBY" value="false" />
@@ -317,9 +314,6 @@
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="HAML" value="false" />
       <option name="RUBY" value="false" />
@@ -348,9 +342,6 @@
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="HAML" value="false" />
       <option name="RUBY" value="false" />
@@ -379,9 +370,6 @@
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="HAML" value="false" />
       <option name="RUBY" value="false" />
@@ -410,9 +398,6 @@
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="HAML" value="false" />
       <option name="RUBY" value="false" />
@@ -441,9 +426,6 @@
       <option name="ASPECTJ" value="false" />
       <option name="CoffeeScript" value="false" />
       <option name="JSP" value="false" />
-      <option name="SCALA" value="false" />
-      <option name="SBT" value="false" />
-      <option name="SSP" value="false" />
       <option name="KOTLIN" value="false" />
       <option name="HAML" value="false" />
       <option name="RUBY" value="false" />
