@@ -87,5 +87,6 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.json" value="JSON" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_8.xml" value="XML" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.json" value="JSON" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.xml" value="XML" />
   </component>
 </application>
