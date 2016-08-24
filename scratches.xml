@@ -5,6 +5,7 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js" value="Apple JS" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.jshintignore" value="JSHint" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json" value="JSON" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.puml" value="PUML" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.rb" value="ruby" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" value="TEXT" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.xml" value="XML" />
