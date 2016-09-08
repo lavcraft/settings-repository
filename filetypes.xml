@@ -32,6 +32,7 @@
       <mapping ext="bson" type="PLAIN_TEXT" />
       <mapping ext="marathon-lb" type="PLAIN_TEXT" />
       <mapping ext="update" type="PLAIN_TEXT" />
+      <mapping ext="build-in-cluster" type="PLAIN_TEXT" />
       <mapping ext="bemhtml" type="PLAIN_TEXT" />
       <mapping ext="dns" type="PLAIN_TEXT" />
       <mapping ext="ym" type="YAML_EX" />
