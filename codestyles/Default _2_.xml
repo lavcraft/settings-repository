@@ -1,4 +1,7 @@
 <code_scheme name="Default (2)">
+  <GroovyCodeStyleSettings>
+    <option name="SPACE_IN_NAMED_ARGUMENT" value="false" />
+  </GroovyCodeStyleSettings>
   <MarkdownNavigatorCodeStyleSettings>
     <option name="RIGHT_MARGIN" value="72" />
   </MarkdownNavigatorCodeStyleSettings>
