@@ -2,5 +2,6 @@
   <component name="ScratchFileService">
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json" value="JSON" />
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.xml" value="XML" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.xml" value="XML" />
   </component>
 </application>
