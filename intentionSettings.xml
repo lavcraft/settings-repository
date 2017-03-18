@@ -1,5 +1,0 @@
-<application>
-  <component name="IntentionManagerSettings">
-    <ignoreAction name="Java/JUnit/Convert JUnit3 Test Case to JUnit4" />
-  </component>
-</application>
