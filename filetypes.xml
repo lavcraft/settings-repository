@@ -6,6 +6,7 @@
       <mapping pattern="var" type="PLAIN_TEXT" />
       <mapping pattern="alse1" type="PLAIN_TEXT" />
       <mapping pattern="alse0" type="PLAIN_TEXT" />
+      <mapping pattern="GroovyConfig" type="PLAIN_TEXT" />
       <mapping pattern="nginx" type="PLAIN_TEXT" />
       <mapping pattern="all" type="PLAIN_TEXT" />
       <mapping pattern="development" type="PLAIN_TEXT" />
