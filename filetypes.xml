@@ -32,6 +32,7 @@
       <mapping ext="up" type="PLAIN_TEXT" />
       <mapping ext="framework" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
+      <mapping ext="tpl" type="PLAIN_TEXT" />
       <mapping ext="bson" type="PLAIN_TEXT" />
       <mapping ext="marathon-lb" type="PLAIN_TEXT" />
       <mapping ext="update" type="PLAIN_TEXT" />
