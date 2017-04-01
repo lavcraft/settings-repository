@@ -417,4 +417,18 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="nsb" value="@org.springframework.context.annotation.Bean&#10;public $BEAN_CLASSNAME$ $BEAN_CLASSNAME_ESCAPED$($ARGS$){&#10;  return new $BEAN_CLASSNAME$($CUSTOM_CONSTRUCTOR$);&#10;}&#10;" toReformat="true" toShortenFQNames="true">
+    <variable name="BEAN_CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BEAN_CLASSNAME_ESCAPED" expression="camelCase(BEAN_CLASSNAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CUSTOM_CONSTRUCTOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="&lt;abbreviation&gt;" value="org.springframework.context.annotation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
 </templateSet>
