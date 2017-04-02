@@ -417,7 +417,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="nsb" value="@org.springframework.context.annotation.Bean&#10;public $BEAN_CLASSNAME$ $BEAN_CLASSNAME_ESCAPED$($ARGS$){&#10;  return new $BEAN_CLASSNAME$($CUSTOM_CONSTRUCTOR$);&#10;}&#10;" toReformat="true" toShortenFQNames="true">
+  <template name="nsb" value="@org.springframework.context.annotation.Bean&#10;public $BEAN_CLASSNAME$ $BEAN_CLASSNAME_ESCAPED$($ARGS$){&#10;  return new $BEAN_CLASSNAME$($CUSTOM_CONSTRUCTOR$);&#10;}&#10;" description="new spring bean java declaration with @Bean" toReformat="true" toShortenFQNames="true">
     <variable name="BEAN_CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="BEAN_CLASSNAME_ESCAPED" expression="camelCase(BEAN_CLASSNAME)" defaultValue="" alwaysStopAt="false" />
     <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
@@ -426,9 +426,12 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="&lt;abbreviation&gt;" value="org.springframework.context.annotation" toReformat="true" toShortenFQNames="true">
+  <template name="nspc" value="@javax.annotation.PostConstruct&#10;public void init() {&#10;  System.out.println(&quot;$MSG$&quot; + $CLASSNAME$.class);&#10;}" description="new srping post consrtruct method" toReformat="true" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="init:" alwaysStopAt="true" />
+    <variable name="CLASSNAME" expression="className().class" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
     </context>
   </template>
 </templateSet>
