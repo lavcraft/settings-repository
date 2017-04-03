@@ -434,4 +434,27 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
+  <template name="jbthrowrepositoryfindall" value="doThrow(new java.lang.RuntimeException(&quot;Database is down&quot;)).when($REPO_NAME$).findAll();" toReformat="true" toShortenFQNames="true">
+    <variable name="REPO_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbverifytimes" value="Mockito.verify($OBJ_NAME$, Mockito.times(1))&#10;        .$METHOD_NAME$($VAL_CAPTOR$);" description="mockito verify with times" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="OBJ_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_CAPTOR" expression="" defaultValue="&quot;org.mockito.Matchers.anyString()&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbassertnull" value="org.junit.Assert.assertNull($TARGET$);" description="mockitor assert ull" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
