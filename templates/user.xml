@@ -457,4 +457,21 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="jbassistantproperties" value="return new com.conference.spring.test.webassistant.AssistantProperties(new java.util.ArrayList&lt;&gt;(java.util.Arrays.asList(&quot;random1&quot;, &quot;random2&quot;, &quot;random3&quot;)));" description="generate AssistantProperties bean with stub props" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbanswerpersistencetest" value="@org.junit.Test&#10;public void should_persist_and_read() throws java.lang.Exception {&#10;  com.conference.spring.test.webassistant.persistence.QuestionEntity questionEntity = com.conference.spring.test.webassistant.persistence.QuestionEntity.builder()&#10;      .text(&quot;question?&quot;)&#10;      .build();&#10;  questionEntity = entityManager.persist(questionEntity);&#10;  com.conference.spring.test.webassistant.persistence.AnswerEntity persist = entityManager.persist(com.conference.spring.test.webassistant.persistence.AnswerEntity.builder()&#10;      .text(&quot;answer&quot;)&#10;      .build());&#10;&#10;  assertNotNull(answersRepository.findOne(persist.getId()));&#10;  assertNotNull(questionRepository.findOne(questionEntity.getId()));&#10;}" description="generate answer persistence test" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="&lt;abbreviation&gt;" value="@org.junit.Test&#10;  public void should_persist_and_read() throws java.lang.Exception {&#10;    com.conference.spring.test.webassistant.persistence.QuestionEntity questionEntity = com.conference.spring.test.webassistant.persistence.QuestionEntity.builder()&#10;        .text(&quot;question?&quot;)&#10;        .build();&#10;    questionEntity = entityManager.persist(questionEntity);&#10;    com.conference.spring.test.webassistant.persistence.AnswerEntity persist = entityManager.persist(com.conference.spring.test.webassistant.persistence.AnswerEntity.builder()&#10;        .text(&quot;answer&quot;)&#10;        .build());&#10;&#10;    assertNotNull(answersRepository.findOne(persist.getId()));&#10;    assertNotNull(questionRepository.findOne(questionEntity.getId()));&#10;  }" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
