@@ -434,7 +434,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="jbthrowrepositoryfindall" value="doThrow(new java.lang.RuntimeException(&quot;Database is down&quot;)).when($REPO_NAME$).$METHOD$;" toReformat="true" toShortenFQNames="true">
+  <template name="jbthrowrepositoryfindall" value="org.mockito.Mockito.doThrow(new java.lang.RuntimeException(&quot;Database is down&quot;)).when($REPO_NAME$).$METHOD$;" toReformat="true" toShortenFQNames="true">
     <variable name="REPO_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="METHOD" expression="" defaultValue="findAll()" alwaysStopAt="true" />
     <context>
@@ -507,6 +507,11 @@
   <template name="jbyegorphrase" value="&quot;i am object and object within me&quot;" description="yegor256 phrase" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="jbjpadatatestdefault" value="@org.springframework.beans.factory.annotation.Autowired&#10;  private org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager entityManager;&#10;&#10;  @org.springframework.beans.factory.annotation.Autowired&#10;  private com.conference.spring.test.webassistant.persistence.AnswersRepository answersRepository;&#10;&#10;  @org.springframework.beans.factory.annotation.Autowired&#10;  private com.conference.spring.test.webassistant.persistence.QuestionRepository questionRepository;&#10;&#10;  @org.junit.Test&#10;  public void should_persist_and_read() throws java.lang.Exception {&#10;    com.conference.spring.test.webassistant.persistence.QuestionEntity questionEntity = com.conference.spring.test.webassistant.persistence.QuestionEntity.builder()&#10;        .text(&quot;question?&quot;)&#10;        .build();&#10;    questionEntity = entityManager.persist(questionEntity);&#10;    com.conference.spring.test.webassistant.persistence.AnswerEntity persist = entityManager.persist(com.conference.spring.test.webassistant.persistence.AnswerEntity.builder()&#10;        .text(&quot;answer&quot;)&#10;        .build());&#10;&#10;  org.junit.Assert.assertNotNull(answersRepository.findOne(persist.getId()));&#10;    org.junit.Assert.assertNotNull(questionRepository.findOne(questionEntity.getId()));&#10;  }" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
 </templateSet>
