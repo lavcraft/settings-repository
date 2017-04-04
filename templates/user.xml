@@ -434,8 +434,9 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="jbthrowrepositoryfindall" value="doThrow(new java.lang.RuntimeException(&quot;Database is down&quot;)).when($REPO_NAME$).findAll();" toReformat="true" toShortenFQNames="true">
+  <template name="jbthrowrepositoryfindall" value="doThrow(new java.lang.RuntimeException(&quot;Database is down&quot;)).when($REPO_NAME$).$METHOD$;" toReformat="true" toShortenFQNames="true">
     <variable name="REPO_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="findAll()" alwaysStopAt="true" />
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
@@ -474,7 +475,31 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="&lt;abbreviation&gt;" value="@org.junit.Test&#10;  public void should_send_question() throws java.lang.Exception {&#10;    Mockito.doReturn(com.conference.spring.test.webassistant.domain.Answer.builder()&#10;        .answer(&quot;Нормально делай нормально будет&quot;)&#10;        .build())&#10;        .when(jBaruchClient).handleQuestion(anyObject());&#10;&#10;    org.springframework.http.ResponseEntity&lt;com.conference.spring.test.webassistant.domain.Question&gt; questionResponseEntity = testRestTemplate.postForEntity(&quot;/question&quot;, com.conference.spring.test.webassistant.domain.Question.builder()&#10;            .body(&quot;Что нужно сделать чтобы было артифактори работал нормально?&quot;)&#10;            .build()&#10;        , com.conference.spring.test.webassistant.domain.Question.class);&#10;&#10;    Assert.assertThat(questionResponseEntity.getStatusCode(), CoreMatchers.equalTo(org.springframework.http.HttpStatus.OK));&#10;&#10;    Mockito.verify(notificationService, Mockito.times(1)).notify(argumentCaptor.capture());&#10;&#10;    Assert.assertThat(argumentCaptor.getValue().getAnswer(), CoreMatchers.equalTo(&quot;Нормально делай нормально будет&quot;));&#10;  }" toReformat="true" toShortenFQNames="true">
+  <template name="jbshouldchecktspringwebsendquestion" value="@org.junit.Test&#10;  public void should_send_question() throws java.lang.Exception {&#10;    Mockito.doReturn(Answer.builder()&#10;        .answer(&quot;Технологии идеальны, люди – ***ки&quot;)&#10;        .build())&#10;        .when(jBaruchClient).handleQuestion(org.mockito.Matchers.anyObject());&#10;&#10;    org.springframework.http.ResponseEntity&lt;com.conference.spring.test.webassistant.domain.Question&gt; questionResponseEntity = testRestTemplate.postForEntity(&quot;/question&quot;, &#10;        com.conference.spring.test.webassistant.domain.Question.builder()&#10;            .body(&quot;Что нужно сделать чтобы ХХХ работал нормально?&quot;)&#10;            .build()&#10;        , com.conference.spring.test.webassistant.domain.Question.class);&#10;&#10;    org.junit.Assert.assertThat(questionResponseEntity.getStatusCode(), org.hamcrest.CoreMatchers.equalTo(org.springframework.http.HttpStatus.OK));&#10;&#10;    org.mockito.Mockito.verify(notificationService, org.mockito.Mockito.times(1)).notify(argumentCaptor.capture());&#10;&#10;    org.junit.Assert.assertThat(argumentCaptor.getValue().getAnswer(), org.hamcrest.CoreMatchers.equalTo(&quot;Технологии идеальны, люди – ***ки&quot;));&#10;  }" description="generate jbaruch technology is ideal test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jbassertThatEqualTo" value="org.junit.Assert.assertThat($TARGET$, equalTo($EXPECTED$));" description="generate assert that with equalTo" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPECTED" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbMockJbaruchConfiguration" value="@org.springframework.boot.test.context.TestConfiguration&#10;  public static class MockJbaruchConfiguration {&#10;    @org.springframework.boot.test.mock.mockito.MockBean&#10;    com.conference.spring.test.webassistant.client.JBaruchClient jBaruchClient;&#10;&#10;    @javax.annotation.PostConstruct&#10;    public void init() {&#10;      org.mockito.Mockito.when(jBaruchClient.assistantName())&#10;          .thenReturn(com.conference.spring.test.webassistant.domain.QuestionType.JBARUCH);&#10;    }&#10;  }" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jbtextresolvertest" value="com.conference.spring.test.webassistant.domain.QuestionType jbaruchType = textBasedQuestionTypeResolver.resolveType(com.conference.spring.test.webassistant.domain.Question.builder()&#10;        .body(&quot;groovy in object is sexy?&quot;)&#10;        .build());&#10;&#10;    com.conference.spring.test.webassistant.domain.QuestionType yegorType = textBasedQuestionTypeResolver.resolveType(com.conference.spring.test.webassistant.domain.Question.builder()&#10;        .body(&quot;fall in love with objects?&quot;)&#10;        .build());" description="generate quesiton resolvers test" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbInjectTokens" value="@org.springframework.beans.factory.annotation.Value(&quot;${tokens.jbaruch}&quot;)&#10;  java.lang.String stringjb;&#10;  @org.springframework.beans.factory.annotation.Value(&quot;${tokens.yegor256}&quot;)&#10;  java.lang.String stringyegor;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
