@@ -480,7 +480,7 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="jbassertThatEqualTo" value="org.junit.Assert.assertThat($TARGET$, equalTo($EXPECTED$));" description="generate assert that with equalTo" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="jbassertThatEqualTo" value="org.junit.Assert.assertThat($TARGET$, org.hamcrest.Matchers.equalTo($EXPECTED$));" description="generate assert that with equalTo" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="EXPECTED" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -502,6 +502,11 @@
   <template name="jbInjectTokens" value="@org.springframework.beans.factory.annotation.Value(&quot;${tokens.jbaruch}&quot;)&#10;  java.lang.String stringjb;&#10;  @org.springframework.beans.factory.annotation.Value(&quot;${tokens.yegor256}&quot;)&#10;  java.lang.String stringyegor;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jbyegorphrase" value="&quot;i am object and object within me&quot;" description="yegor256 phrase" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
 </templateSet>
