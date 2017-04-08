@@ -514,4 +514,27 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="jbmockjbaruchanswer" value="org.mockito.Mockito.doReturn(com.conference.spring.test.webassistant.domain.Answer.builder()&#10;        .answer(&quot;Технологии идеальны, люди – ***ки&quot;)&#10;        .build())&#10;        .when(jBaruchClient).handleQuestion(anyObject());" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbsendquestino" value="org.springframework.http.ResponseEntity&lt;com.conference.spring.test.webassistant.domain.Question&gt; questionResponseEntity = testRestTemplate.postForEntity(&quot;/question&quot;,&#10;        com.conference.spring.test.webassistant.domain.Question.builder()&#10;            .body(&quot;Технологии для людей?&quot;)&#10;            .build()&#10;        , com.conference.spring.test.webassistant.domain.Question.class);" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbassertthatcaptor" value="assertThat(argumentCaptor.getValue().getAnswer(), equalTo(&quot;Технологии идеальны, люди – ***ки&quot;));" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sjr" value="@org.junit.runner.RunWith(org.springframework.test.context.junit4.SpringRunner.class)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
