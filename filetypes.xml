@@ -6,6 +6,7 @@
       <mapping pattern="var" type="PLAIN_TEXT" />
       <mapping pattern="alse1" type="PLAIN_TEXT" />
       <mapping pattern="alse0" type="PLAIN_TEXT" />
+      <mapping pattern="GroovyConfig" type="PLAIN_TEXT" />
       <mapping pattern="nginx" type="PLAIN_TEXT" />
       <mapping pattern="all" type="PLAIN_TEXT" />
       <mapping pattern="development" type="PLAIN_TEXT" />
@@ -17,6 +18,8 @@
       <mapping pattern="nginx-log" type="PLAIN_TEXT" />
       <mapping pattern="message" type="PLAIN_TEXT" />
       <mapping pattern="nginx-logrotate" type="PLAIN_TEXT" />
+      <mapping pattern="2" type="PLAIN_TEXT" />
+      <mapping pattern="1" type="PLAIN_TEXT" />
       <mapping pattern="rebuild-insurance-service" type="PLAIN_TEXT" />
       <mapping pattern="vagrant" type="PLAIN_TEXT" />
       <mapping pattern="inventory" type="PLAIN_TEXT" />
@@ -29,6 +32,7 @@
       <mapping ext="up" type="PLAIN_TEXT" />
       <mapping ext="framework" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
+      <mapping ext="tpl" type="PLAIN_TEXT" />
       <mapping ext="bson" type="PLAIN_TEXT" />
       <mapping ext="marathon-lb" type="PLAIN_TEXT" />
       <mapping ext="update" type="PLAIN_TEXT" />

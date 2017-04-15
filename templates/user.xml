@@ -417,4 +417,124 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="nsb" value="@org.springframework.context.annotation.Bean&#10;public $BEAN_CLASSNAME$ $BEAN_CLASSNAME_ESCAPED$($ARGS$){&#10;  return new $BEAN_CLASSNAME$($CUSTOM_CONSTRUCTOR$);&#10;}&#10;" description="new spring bean java declaration with @Bean" toReformat="true" toShortenFQNames="true">
+    <variable name="BEAN_CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BEAN_CLASSNAME_ESCAPED" expression="camelCase(BEAN_CLASSNAME)" defaultValue="" alwaysStopAt="false" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CUSTOM_CONSTRUCTOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="nspc" value="@javax.annotation.PostConstruct&#10;public void init() {&#10;  System.out.println(&quot;$MSG$&quot; + $CLASSNAME$.class);&#10;}" description="new srping post consrtruct method" toReformat="true" toShortenFQNames="true">
+    <variable name="MSG" expression="" defaultValue="init:" alwaysStopAt="true" />
+    <variable name="CLASSNAME" expression="className().class" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="jbthrowrepositoryfindall" value="org.mockito.Mockito.doThrow(new java.lang.RuntimeException(&quot;Database is down&quot;)).when($REPO_NAME$).$METHOD$;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="REPO_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="findAll()" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbverifytimes" value="Mockito.verify($OBJ_NAME$, Mockito.times(1))&#10;        .$METHOD_NAME$($VAL_CAPTOR$);" description="mockito verify with times" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="OBJ_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_CAPTOR" expression="" defaultValue="&quot;org.mockito.Matchers.anyString()&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbassertnull" value="org.junit.Assert.assertNull($TARGET$);" description="mockitor assert ull" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbassistantproperties" value="return new com.conference.spring.test.webassistant.AssistantProperties(new java.util.ArrayList&lt;&gt;(java.util.Arrays.asList(&quot;random1&quot;, &quot;random2&quot;, &quot;random3&quot;)));" description="generate AssistantProperties bean with stub props" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbanswerpersistencetest" value="@org.junit.Test&#10;public void should_persist_and_read() throws java.lang.Exception {&#10;  com.conference.spring.test.webassistant.persistence.QuestionEntity questionEntity = com.conference.spring.test.webassistant.persistence.QuestionEntity.builder()&#10;      .text(&quot;question?&quot;)&#10;      .build();&#10;  questionEntity = entityManager.persist(questionEntity);&#10;  com.conference.spring.test.webassistant.persistence.AnswerEntity persist = entityManager.persist(com.conference.spring.test.webassistant.persistence.AnswerEntity.builder()&#10;      .text(&quot;answer&quot;)&#10;      .build());&#10;&#10;  assertNotNull(answersRepository.findOne(persist.getId()));&#10;  assertNotNull(questionRepository.findOne(questionEntity.getId()));&#10;}" description="generate answer persistence test" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbmockmvc" value="@org.junit.Test&#10;public void should_send_question() throws Exception {&#10;  mockMvc.perform(&#10;      MockMvcRequestBuilders.post(&quot;/question&quot;)&#10;          .content(&quot;{ \&quot;body\&quot;:\&quot;Что нужно сделать чтобы было артифактори работал нормально?\&quot;}&quot;)&#10;          .accept(&quot;application/json&quot;)&#10;          .contentType(&quot;application/json&quot;)&#10;  ).andExpect(MockMvcResultMatchers.status().isOk());&#10;}" description="generate mock mvc test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jbshouldchecktspringwebsendquestion" value="@org.junit.Test&#10;  public void should_send_question() throws java.lang.Exception {&#10;    Mockito.doReturn(Answer.builder()&#10;        .answer(&quot;Технологии идеальны, люди – ***ки&quot;)&#10;        .build())&#10;        .when(jBaruchClient).handleQuestion(org.mockito.Matchers.anyObject());&#10;&#10;    org.springframework.http.ResponseEntity&lt;com.conference.spring.test.webassistant.domain.Question&gt; questionResponseEntity = testRestTemplate.postForEntity(&quot;/question&quot;, &#10;        com.conference.spring.test.webassistant.domain.Question.builder()&#10;            .body(&quot;Что нужно сделать чтобы ХХХ работал нормально?&quot;)&#10;            .build()&#10;        , com.conference.spring.test.webassistant.domain.Question.class);&#10;&#10;    org.junit.Assert.assertThat(questionResponseEntity.getStatusCode(), org.hamcrest.CoreMatchers.equalTo(org.springframework.http.HttpStatus.OK));&#10;&#10;    org.mockito.Mockito.verify(notificationService, org.mockito.Mockito.times(1)).notify(argumentCaptor.capture());&#10;&#10;    org.junit.Assert.assertThat(argumentCaptor.getValue().getAnswer(), org.hamcrest.CoreMatchers.equalTo(&quot;Технологии идеальны, люди – ***ки&quot;));&#10;  }" description="generate jbaruch technology is ideal test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jbassertThatEqualTo" value="org.junit.Assert.assertThat($TARGET$, org.hamcrest.Matchers.equalTo($EXPECTED$));" description="generate assert that with equalTo" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPECTED" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbMockJbaruchConfiguration" value="@org.springframework.boot.test.context.TestConfiguration&#10;  public static class MockJbaruchConfiguration {&#10;    @org.springframework.boot.test.mock.mockito.MockBean&#10;    com.conference.spring.test.webassistant.client.JBaruchClient jBaruchClient;&#10;&#10;    @javax.annotation.PostConstruct&#10;    public void init() {&#10;      org.mockito.Mockito.when(jBaruchClient.assistantName())&#10;          .thenReturn(com.conference.spring.test.webassistant.domain.QuestionType.JBARUCH);&#10;    }&#10;  }" description="" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jbtextresolvertest" value="com.conference.spring.test.webassistant.domain.QuestionType jbaruchType = textBasedQuestionTypeResolver.resolveType(com.conference.spring.test.webassistant.domain.Question.builder()&#10;        .body(&quot;groovy in object is sexy?&quot;)&#10;        .build());&#10;&#10;    com.conference.spring.test.webassistant.domain.QuestionType yegorType = textBasedQuestionTypeResolver.resolveType(com.conference.spring.test.webassistant.domain.Question.builder()&#10;        .body(&quot;fall in love with objects?&quot;)&#10;        .build());" description="generate quesiton resolvers test" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbInjectTokens" value="@org.springframework.beans.factory.annotation.Value(&quot;${tokens.jbaruch}&quot;)&#10;  java.lang.String stringjb;&#10;  @org.springframework.beans.factory.annotation.Value(&quot;${tokens.yegor256}&quot;)&#10;  java.lang.String stringyegor;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jbyegorphrase" value="&quot;i am object and object within me&quot;" description="yegor256 phrase" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="jbjpadatatestdefault" value="@org.springframework.beans.factory.annotation.Autowired&#10;  private org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager entityManager;&#10;&#10;  @org.springframework.beans.factory.annotation.Autowired&#10;  private com.conference.spring.test.webassistant.persistence.AnswersRepository answersRepository;&#10;&#10;  @org.springframework.beans.factory.annotation.Autowired&#10;  private com.conference.spring.test.webassistant.persistence.QuestionRepository questionRepository;&#10;&#10;  @org.junit.Test&#10;  public void should_persist_and_read() throws java.lang.Exception {&#10;    com.conference.spring.test.webassistant.persistence.QuestionEntity questionEntity = com.conference.spring.test.webassistant.persistence.QuestionEntity.builder()&#10;        .text(&quot;question?&quot;)&#10;        .build();&#10;    questionEntity = entityManager.persist(questionEntity);&#10;    com.conference.spring.test.webassistant.persistence.AnswerEntity persist = entityManager.persist(com.conference.spring.test.webassistant.persistence.AnswerEntity.builder()&#10;        .text(&quot;answer&quot;)&#10;        .build());&#10;&#10;  org.junit.Assert.assertNotNull(answersRepository.findOne(persist.getId()));&#10;    org.junit.Assert.assertNotNull(questionRepository.findOne(questionEntity.getId()));&#10;  }" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jbmockjbaruchanswer" value="org.mockito.Mockito.doReturn(com.conference.spring.test.webassistant.domain.Answer.builder()&#10;        .answer(&quot;Технологии идеальны, люди – ***ки&quot;)&#10;        .build())&#10;        .when(jBaruchClient).handleQuestion(anyObject());" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbsendquestino" value="org.springframework.http.ResponseEntity&lt;com.conference.spring.test.webassistant.domain.Question&gt; questionResponseEntity = testRestTemplate.postForEntity(&quot;/question&quot;,&#10;        com.conference.spring.test.webassistant.domain.Question.builder()&#10;            .body(&quot;Технологии для людей?&quot;)&#10;            .build()&#10;        , com.conference.spring.test.webassistant.domain.Question.class);" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jbassertthatcaptor" value="assertThat(argumentCaptor.getValue().getAnswer(), equalTo(&quot;Технологии идеальны, люди – ***ки&quot;));" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sjr" value="@org.junit.runner.RunWith(org.springframework.test.context.junit4.SpringRunner.class)" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
