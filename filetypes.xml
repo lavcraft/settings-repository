@@ -30,6 +30,7 @@
       <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="formatlog" type="PLAIN_TEXT" />
       <mapping ext="up" type="PLAIN_TEXT" />
+      <mapping ext="pem" type="PLAIN_TEXT" />
       <mapping ext="framework" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="tpl" type="PLAIN_TEXT" />
