@@ -543,4 +543,16 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="jeeProductionException" value="throw new java.lang.RuntimeException(&quot;Shoud have production profile&quot;);" description="should have production profile" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="jeeOsIf" value="if (os.equalsIgnoreCase(&quot;Mac Os X&quot;))" description="os.name if" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>

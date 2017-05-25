@@ -21,4 +21,8 @@
     <variable name="read" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
+  <template name="UnparcelIntArray" value="int $read$[] = in.createIntArray();&#10;in.readIntArray($read$);" description="Unparcels an int array" toReformat="true" toShortenFQNames="true">
+    <variable name="read" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
 </templateSet>
