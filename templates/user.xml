@@ -537,4 +537,10 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="failureanalysis" value="return new org.springframework.boot.diagnostics.FailureAnalysis(&quot;Shoud have production profile&quot;, &quot;add --spring.profiles.active=production&quot;, failure);" description="generate default failure analysis object with example messages" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
