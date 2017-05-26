@@ -583,4 +583,9 @@
       <option name="XML" value="false" />
     </context>
   </template>
+  <template name="jeeSendListnener" value="@org.springframework.context.annotation.Bean&#10;  public org.springframework.context.ApplicationListener&lt;org.springframework.context.event.ContextRefreshedEvent&gt; applicationListenerContextRefreshedEvent(&#10;      conference.spring.boot.starter.profiles.prepared.NotificationProperties notificationProperties&#10;  ) {&#10;    return (org.springframework.context.event.ContextRefreshedEvent event) -&gt; {&#10;      org.springframework.core.env.Environment environment = event.getApplicationContext().getEnvironment();&#10;&#10;      if (environment.getActiveProfiles().length == 0) {&#10;        throw new java.lang.RuntimeException(&quot;Shoud have production profile&quot;);&#10;      }&#10;&#10;    };&#10;  }" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
