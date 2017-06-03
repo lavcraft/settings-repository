@@ -114,7 +114,7 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="sjr" value="@org.junit.runner.RunWith(org.springframework.test.context.junit4.SpringRunner.class)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="sjr" value="@org.junit.runner.RunWith(org.springframework.test.context.junit4.SpringRunner.class)" description="RunWith SpringRunner" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
