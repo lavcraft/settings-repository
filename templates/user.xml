@@ -5,6 +5,7 @@
     <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CUSTOM_CONSTRUCTOR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
+      <option name="GROOVY_DECLARATION" value="true" />
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
