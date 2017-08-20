@@ -30,13 +30,16 @@
       <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="formatlog" type="PLAIN_TEXT" />
       <mapping ext="up" type="PLAIN_TEXT" />
+      <mapping ext="pem" type="PLAIN_TEXT" />
       <mapping ext="framework" type="PLAIN_TEXT" />
+      <mapping ext="platform" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="tpl" type="PLAIN_TEXT" />
       <mapping ext="bson" type="PLAIN_TEXT" />
       <mapping ext="marathon-lb" type="PLAIN_TEXT" />
       <mapping ext="update" type="PLAIN_TEXT" />
       <mapping ext="build-in-cluster" type="PLAIN_TEXT" />
+      <mapping ext="woff" type="PLAIN_TEXT" />
       <mapping ext="bemhtml" type="PLAIN_TEXT" />
       <mapping ext="dns" type="PLAIN_TEXT" />
       <mapping ext="ym" type="YAML_EX" />
